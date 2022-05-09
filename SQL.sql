@@ -21,10 +21,10 @@ CREATE TABLE `ROBOTS_document` (
 	
 
 INSERT INTO `ROBOTS_media` (`titre`, `type`, `date`, `lien`)
-VALUES ("test1_img", "image", '2022-05-09 14:00:00', "https://tp-epua.univ-smb.fr/~sangouam/ROBOTS/documents/media/images/IMG_20220504_102031.jpg");
+VALUES ("test1_img", "image", '2022-05-09 14:00:00', "https://tp-epua.univ-smb.fr/~sangouam/ROBOTS/documents/images/IMG_20220504_102031.jpg");
 
 INSERT INTO `ROBOTS_media` (`titre`, `type`, `date`, `lien`)
-VALUES ("test2_vidéo", "video", '2022-05-09 14:00:00', "https://tp-epua.univ-smb.fr/~sangouam/ROBOTS/documents/media/videos/20220504_103746.mp4");
+VALUES ("test2_vidéo", "video", '2022-05-09 14:00:00', "https://tp-epua.univ-smb.fr/~sangouam/ROBOTS/documents/videos/20220504_103746.mp4");
 
 
 
