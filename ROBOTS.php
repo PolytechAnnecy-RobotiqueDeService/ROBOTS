@@ -12,16 +12,18 @@
 	
   
 	<?php
-		/*if(!isset($projectDir)){
+		if(!isset($projectDir)){
 			$projectDir = dirname ( __FILE__ , 1 );	
 		}
 		if(!isset($basehttp)){
-			$login = file_get_contents("{$projectDir}/VOTRE_LOGIN.txt");
-			$basehttp = "https://tp-epua.univ-smb.fr/~{$login}/";	
-		}	*/
+			if( file_exists("{$projectDir}/VOTRE_LOGIN.txt") ){ 
+				$login = file_get_contents("{$projectDir}/VOTRE_LOGIN.txt");
+				$basehttp = "https://tp-epua.univ-smb.fr/~{$login}/";
+			}else{
+				$basehttp = "https://tp-epua.univ-smb.fr/~VOTRE_LOGIN/";
+			}			
+		}
 	?>
-	
-	
 
 	<body>
 	<div id="fond">
