@@ -6,8 +6,10 @@
 	<title>APP Robots</title>
 	<meta charset="UTF-8">
     <meta content="info">
-    <link rel="stylesheet" media="screen" href="lespages/ROBOTS.css" />  
+    <link rel="stylesheet" media="screen" href="lespages/ROBOTS.css" /> 
+	<link rel="icon" type="image/png" sizes="16x16" href="documents/icone_site.png"> 
   </head>
+	
   
 	<?php
 		/*if(!isset($projectDir)){
@@ -60,11 +62,14 @@
 	
 	</div>
 
+	
+
+	</div>
+		</br></br>
 	<div id="pied">
-		<span>Polytech Annecy-Chambéry - Apprentissage Par Projets - Robots</span>
+			<span>Polytech Annecy-Chambéry - Apprentissage Par Projets - Robots</span>
 	</div>
 
-</div>
 	</body>
 </html>  
   
