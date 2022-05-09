@@ -1,0 +1,134 @@
+
+
+#fond{
+    width: 100%;
+    margin: 0px auto 0px auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display : inline-flex;
+    background-color: #004643;
+  }
+  
+  #titre{
+    margin: 5px;
+    text-align: center;
+    flex-basis: 100%;
+  }
+  #titre span{
+    font-family: Helvetica;
+    font-weight:bold;
+    font-size: 22pt;
+    /*text-shadow: 5px 5px 5px white;*/
+  }
+  
+  
+  
+  /*-----------------------*/
+  /*   Gestion du menu */
+  /*-----------------------*/
+  #menu{
+    margin: 10px auto 0px auto;
+    flex-basis : 15%;
+  }
+  
+  #menu a{
+    text-decoration:none;
+    width :100%;
+  }
+  
+  ul#lemenu{
+    list-style: none;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    height:37px;
+  }
+  ul#lemenu li{
+    display: flex;
+    flex-direction:column;
+    list-style: none;
+    padding: 0px;
+  }
+  
+  
+  /*-----------------------*/
+  
+  #contenu{
+    min-height: 600px;
+    border:2px solid;
+    border-color: #001e1d;
+    background-color: #004643;
+    flex-basis: 80%;
+    margin-right:15px;
+
+
+  }ul#lemenu li
+  
+  #pied{
+    height: 30px;
+    margin: 10px 0px 10px 0px;
+    background-color: #BFBFBF;
+    color: #7B7B7B;
+    border:1px solid;
+    border-color: #7B7B7B;
+    text-align: center;
+    flex-basis : 100%;
+  }
+  
+  
+  /*------------------------------------*/
+  /* style pour les boutons             */
+  /* inspiré du site:                   */
+  /* http://www.cssbuttongenerator.com/ */
+  /*------------------------------------*/
+  
+  .btn_menu {
+      -moz-box-shadow:inset 7px 1px 24px -22px #fff6af;
+      -webkit-box-shadow:inset 7px 1px 24px -22px #fff6af;
+      box-shadow:inset 7px 1px 24px -22px #fff6af;
+      background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23) );
+      background:-moz-linear-gradient( center top, #ffec64 5%, #ffab23 100% );
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23');
+      background-color:#ffec64;
+      -webkit-border-top-left-radius:15px;
+      -moz-border-radius-topleft:15px;
+      border-top-left-radius:15px;
+      -webkit-border-top-right-radius:15px;
+      -moz-border-radius-topright:15px;
+      border-top-right-radius:15px;
+      -webkit-border-bottom-right-radius:15px;
+      -moz-border-radius-bottomright:15px;
+      border-bottom-right-radius:15px;
+      -webkit-border-bottom-left-radius:15px;
+      -moz-border-radius-bottomleft:15px;
+      border-bottom-left-radius:15px;
+      text-indent:0;
+    border-top: 2px solid #001e1d;
+    border-right: 2px solid #001e1d;
+    border-bottom: 2px solid #001e1d;
+    border-left: 2px solid #001e1d;
+      display:inline-block;
+      color:#333333;
+      font-family:Arial Black;
+      font-size:16px;
+      font-weight:bold;
+      font-style:normal;
+      height:35px;
+      line-height:30px;
+      width:152px;
+      text-decoration:none;
+      text-align:center;
+  }
+  
+  .btn_menu:hover {
+      background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64) );
+      background:-moz-linear-gradient( center top, #a6a39f 5%, #f0eee2 100% );
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64');
+      background-color:#ffab23;
+  }
+  
+  .encours, .encours:hover {
+      position:relative;
+    height:37px;
+    background: rgb(146, 213, 215);
+  }
+  
