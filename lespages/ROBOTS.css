@@ -24,7 +24,8 @@
   /*   Gestion du menu */
   /*-----------------------*/
   #menu{
-    margin: 10px auto 0px auto;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
   #menu a{
@@ -52,7 +53,8 @@
     border:2px solid;
     border-color: #001e1d;
     background-color: #004643;
-    margin-right:15px;
+    margin-right: 10px;
+    margin-left: 10px;
 
 
   }ul#lemenu li
@@ -126,14 +128,15 @@
     background: rgb(146, 213, 215);
   }
 
-/*
-  @media only screen and (min-width = 781px){
+
+  @media only screen and (min-width: 731px){
     #fond{
       display : inline-flex;
+      justify-content: space-evenly;
     }
 
     #menu{
-      flex-basis: 30%;
+      flex-basis: 25%;
     }
 
     ul#lemenu li{
@@ -145,10 +148,10 @@
       flex-basis: 65%;
 
     }
-  }*/
+  }
 
   
-  @media only screen {
+  @media only screen and (max-width: 730px){
 
     #menu{
       flex-basis : 100%;
@@ -165,7 +168,6 @@
 
     #contenu{
       flex-basis: 100%;
-      background-color : red;
     }
     
   }
