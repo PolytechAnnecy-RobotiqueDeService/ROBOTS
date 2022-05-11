@@ -62,8 +62,8 @@
     background-color: #004643;
     margin-right: 10px;
     margin-left: 10px;
-
-
+    text-align: justify;
+    text-justify: inter-word;
   }ul#lemenu li
   
   #pied{
