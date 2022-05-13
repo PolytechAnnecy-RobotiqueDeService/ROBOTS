@@ -14,6 +14,9 @@
     <p>Bienvenue sur la page des archives ! Vous trouverez ici un résumé de chaque séance ainsi que les document PDF des comptes-rendus et autres rapports.</p> 
 
     <?php
+    echo getcwd();
+
+
         $semestre[0]="Premier semestre";
 
         $presentation_semestre[0]="<p>Le semestre 6 de notre cycle ingénieur marque le premier semestre de travail sur notre APP. C’est donc un semestre essentiellement lié à la découverte des différents outils à notre disposition afin de pouvoir apprendre à les maîtriser. Si ce travail de découverte est essentiel pour avancer dans notre travail, le gros de notre projet, c’est-à-dire l’établissement d’un cahier des charges et une progression plus réfléchie du travail, n’interviendra qu’aux semestres suivants, quand nous saurons déjà nous servir correctement de notre environnement de travail. Notre apprentissage sur ce semestre se concentrera essentiellement sur la maîtrise et la compréhension du fonctionnement de Choregraphe, le logiciel codé en python pour utiliser les robots Pepper et Nao ; l’apprentissage et la maîtrise du langage JavaScript pour créer une application web ; et enfin la compréhension et la maîtrise du principe de serveur web dans le but d’en créer un lors des semestres suivant (son but étant de lier entre eux tous les différents éléments de notre projet). </p>";
@@ -33,7 +36,7 @@
         $date_seance[7]="<i>10/03/2022</i>";
 
         $compterendu[0]="<p> Cette première séance a été l’occasion de découvrir notre équipe et de mettre au point des objectifs pour le projet. </p><p> Dans le cadre du thème « robotique de service », nous avons rapidement émis l’idée de mettre en place, à l’aide des modèles de robots Pepper et Nao mis à notre disposition, un système de visite. Notre but à long terme serait de parvenir à présenter ces robots lors de portes ouvertes afin qu’ils participent à la visite du bâtiment Polytech Annecy. Nous avons ainsi listé plusieurs idées, donc certaines ont été abandonnées depuis pour des raisons de temps et de faisabilité et dont le détail se trouve dans le compte-rendu. </p><p> Bien que nous n’ayons pas commencé à pratiquer durant cette première séance, elle nous a permis de non seulement trouver un but auquel aboutir à la fin du projet, mais également de mieux cerner les difficultés qui se dressaient devant nous. Tous les détails de la séance sont disponibles dans le compte-rendu (rédigé par Jules Mison) téléchargeable ci-dessous.</p>
-                        <a href=’/comptes_rendus/compte_rendu_1.pdf’ target=’_blank’>Compte-rendu de la séance 1</a>";
+                        <a href=\"./documents/comptes_rendus/compte_rendu_1.pdf\" target=’_blank’>Compte-rendu de la séance 1</a>";
         $compterendu[1]="<p>résumé séance 2</p>";
         $compterendu[2]="<p>résumé séance 3</p>";
 
@@ -56,7 +59,7 @@
             echo"<ul>"; //début liste séances
 
                 while (isset($seance[$b])){ //parcours des séances
-                    echo "<div class='seance'><li><h3> ".$seance[$b]."</h3></li> "; 
+                    echo "<div class='seance'><li><h3> <button type='button' class='bouton'>".$seance[$b]."</button></h3></li> "; 
                     echo "<div class='text'><span class ='cr'>".$date_seance[$a].$compterendu[$b]."</span></div>";
                     echo"</div>";
 
