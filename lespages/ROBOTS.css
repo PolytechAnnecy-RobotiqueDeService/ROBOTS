@@ -1,0 +1,174 @@
+/* Esthétique générale de la page */
+
+#fond{
+    width: 100%;
+    margin: 0px auto 0px auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #004643;
+  }
+
+  /*#corpsdepage{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }*/
+  
+  #titre{
+    margin: 5px;
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  #titre span{
+    font-family: Helvetica;
+    font-weight:bold;
+    font-size: 22pt;
+    color : white;
+  }
+  
+  
+  /* Gestion du menu */
+
+  #menu{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  #menu a{
+    text-decoration:none;
+    width :100%;
+  }
+  
+  ul#lemenu{
+    list-style: none;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  ul#lemenu li{
+    list-style: none;
+    padding: 0px;
+  }
+  
+  
+  /* Gestion du reste de la page */
+  
+  #contenu{
+    min-height: 600px;
+    border:2px solid;
+    border-color: #001e1d;
+    background-color: #004643;
+    margin-right: 10px;
+    margin-left: 10px;
+  }ul#lemenu li
+  
+  #pied{
+    height: 30px;
+    margin: 10px 0px 10px 0px;
+    background-color:#004643;
+    flex-basis: 100%;
+    color: white;
+  }
+  
+  
+  /* Gestion des boutons */
+  
+  .btn_menu {
+      -moz-box-shadow:inset 7px 1px 24px -22px #fff6af;
+      -webkit-box-shadow:inset 7px 1px 24px -22px #fff6af;
+      box-shadow:inset 7px 1px 24px -22px #fff6af;
+      background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23) );
+      background:-moz-linear-gradient( center top, #ffec64 5%, #ffab23 100% );
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23');
+      background-color:#ffec64;
+      -webkit-border-top-left-radius:15px;
+      -moz-border-radius-topleft:15px;
+      border-top-left-radius:15px;
+      -webkit-border-top-right-radius:15px;
+      -moz-border-radius-topright:15px;
+      border-top-right-radius:15px;
+      -webkit-border-bottom-right-radius:15px;
+      -moz-border-radius-bottomright:15px;
+      border-bottom-right-radius:15px;
+      -webkit-border-bottom-left-radius:15px;
+      -moz-border-radius-bottomleft:15px;
+      border-bottom-left-radius:15px;
+      text-indent:0;
+      border-top: 2px solid #001e1d;
+      border-right: 2px solid #001e1d;
+      border-bottom: 2px solid #001e1d;
+      border-left: 2px solid #001e1d;
+      display:inline-block;
+      color:#333333;
+      font-family:Arial Black;
+      font-size:16px;
+      font-weight:bold;
+      font-style:normal;
+      height:35px;
+      line-height:30px;
+      width:152px;
+      text-decoration:none;
+      text-align:center;
+  }
+  
+  .btn_menu:hover {
+      background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64) );
+      background:-moz-linear-gradient( center top, #a6a39f 5%, #f0eee2 100% );
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64');
+      background-color:#ffab23;
+  }
+  
+  .encours, .encours:hover {
+    position:relative;
+    height:37px;
+    background: rgb(146, 213, 215);
+  }
+
+
+  /* Affichage pour une fenêtre de plus de 730 px */
+
+  @media only screen and (min-width: 731px){
+    #fond{
+      display : inline-flex;
+    }
+
+    #menu{
+      flex-basis: 25%;
+    }
+
+    ul#lemenu li{
+      display: flex;
+      flex-direction:column;
+    }
+
+    #contenu{
+      flex-basis: 65%;
+
+    }
+  }
+
+  
+  /* Affichage pour une fenêtre de moins de 730 px */
+
+  @media only screen and (max-width: 730px){
+
+    #menu{
+      flex-basis : 100%;
+    }
+
+
+
+    ul#lemenu li{
+      display: flex;
+      flex-direction:column;
+      list-style: none;
+      padding: 0px;
+    }
+
+    #contenu{
+      flex-basis: 100%;
+    }
+    
+  }
