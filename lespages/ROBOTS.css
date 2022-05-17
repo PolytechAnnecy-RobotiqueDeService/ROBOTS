@@ -1,34 +1,39 @@
-
+/* Esthétique générale de la page */
 
 #fond{
     width: 100%;
     margin: 0px auto 0px auto;
     flex-wrap: wrap;
     flex-direction: row;
-    display : inline-flex;
+    justify-content: space-evenly;
     background-color: #004643;
   }
+
+  /*#corpsdepage{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }*/
   
   #titre{
     margin: 5px;
     text-align: center;
     flex-basis: 100%;
   }
+
   #titre span{
     font-family: Helvetica;
     font-weight:bold;
     font-size: 22pt;
-    /*text-shadow: 5px 5px 5px white;*/
+    color : white;
   }
   
   
-  
-  /*-----------------------*/
-  /*   Gestion du menu */
-  /*-----------------------*/
+  /* Gestion du menu */
+
   #menu{
-    margin: 10px auto 0px auto;
-    flex-basis : 15%;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
   #menu a{
@@ -40,46 +45,37 @@
     list-style: none;
     margin: 10px 0px 0px 0px;
     padding: 0px;
-    height:37px;
   }
+
   ul#lemenu li{
-    display: flex;
-    flex-direction:column;
     list-style: none;
     padding: 0px;
   }
   
   
-  /*-----------------------*/
+  /* Gestion du reste de la page */
   
   #contenu{
     min-height: 600px;
     border:2px solid;
     border-color: #001e1d;
     background-color: #004643;
-    flex-basis: 80%;
-    margin-right:15px;
-
-
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: justify;
+    text-justify: inter-word;
   }ul#lemenu li
   
   #pied{
     height: 30px;
     margin: 10px 0px 10px 0px;
-    background-color: #BFBFBF;
-    color: #7B7B7B;
-    border:1px solid;
-    border-color: #7B7B7B;
-    text-align: center;
-    flex-basis : 100%;
+    background-color:#004643;
+    flex-basis: 100%;
+    color: white;
   }
   
   
-  /*------------------------------------*/
-  /* style pour les boutons             */
-  /* inspiré du site:                   */
-  /* http://www.cssbuttongenerator.com/ */
-  /*------------------------------------*/
+  /* Gestion des boutons */
   
   .btn_menu {
       -moz-box-shadow:inset 7px 1px 24px -22px #fff6af;
@@ -102,10 +98,10 @@
       -moz-border-radius-bottomleft:15px;
       border-bottom-left-radius:15px;
       text-indent:0;
-    border-top: 2px solid #001e1d;
-    border-right: 2px solid #001e1d;
-    border-bottom: 2px solid #001e1d;
-    border-left: 2px solid #001e1d;
+      border-top: 2px solid #001e1d;
+      border-right: 2px solid #001e1d;
+      border-bottom: 2px solid #001e1d;
+      border-left: 2px solid #001e1d;
       display:inline-block;
       color:#333333;
       font-family:Arial Black;
@@ -127,8 +123,54 @@
   }
   
   .encours, .encours:hover {
-      position:relative;
+    position:relative;
     height:37px;
     background: rgb(146, 213, 215);
   }
+
+
+  /* Affichage pour une fenêtre de plus de 730 px */
+
+  @media only screen and (min-width: 731px){
+    #fond{
+      display : inline-flex;
+    }
+
+    #menu{
+      flex-basis: 25%;
+    }
+
+    ul#lemenu li{
+      display: flex;
+      flex-direction:column;
+    }
+
+    #contenu{
+      flex-basis: 65%;
+
+    }
+  }
+
   
+  /* Affichage pour une fenêtre de moins de 730 px */
+
+  @media only screen and (max-width: 730px){
+
+    #menu{
+      flex-basis : 100%;
+    }
+
+
+
+    ul#lemenu li{
+      display: flex;
+      flex-direction:column;
+      list-style: none;
+      padding: 0px;
+    }
+
+    #contenu{
+      flex-basis: 100%;
+    }
+    
+  }

@@ -26,8 +26,8 @@
 	?>
 	
 	<?php
-		// Mécanisme de pages
-		$encours = array(" "," "," "," "," ");
+		// Mécanisme de changements de pages
+	$encours = array(" "," "," "," "," "," ");
 
 		if( !isset($_GET["page"]) ) { 
 			$page=0;
@@ -39,42 +39,46 @@
 
 	<body>
 		<div id="fond">
-		
+			</br>
 			<div id="titre">
 				<span>APP ROBOTS</span>
 			 </div>
-
-			<div id="menu">
-				<ul id="lemenu">
-				
-				<?php
-					//TODO: Changer les noms de pages!
-					echo "<li><a href=\"?page=0\" class=\"btn_menu $encours[0]\">Accueil</a></li>\n";
-					echo "<li><a href=\"?page=1\" class=\"btn_menu $encours[1]\">Consultation</a></li>\n";
-					echo "<li><a href=\"?page=2\" class=\"btn_menu $encours[2]\">Capteurs</a></li> \n";   
-					echo "<li><a href=\"?page=3\" class=\"btn_menu $encours[3]\">Actionneurs</a></li> \n";   
-					echo "<li><a href=\"?page=4\" class=\"btn_menu $encours[4]\">Mesures</a></li> \n"; 
-				?> 
-
-				</ul>
-			</div>
-
-			<div id="contenu">
-
-				<?php
-					if( file_exists("{$projectDir}/lespages/page_".$page.".php") ){ 
-						include("{$projectDir}/lespages/page_".$page.".php");
-					}
-				?>
+			</br>
 			
-			</div>
-
-		</div>
+			
+				<div id="menu">
+					<ul id="lemenu">
 					
-		</br></br>
+						<?php // Liste des pages pages dans des boutons pour le menu
+							echo "<li><a href=\"?page=0\" class=\"btn_menu $encours[0]\">Accueil</a></li>\n";
+							echo "<li><a href=\"?page=1\" class=\"btn_menu $encours[1]\">Objectifs</a></li>\n";
+							echo "<li><a href=\"?page=2\" class=\"btn_menu $encours[2]\">Avancement</a></li> \n";  
+							echo "<li><a href=\"?page=5\" class=\"btn_menu $encours[5]\">Les robots</a></li> \n";  
+							echo "<li><a href=\"?page=3\" class=\"btn_menu $encours[3]\">Notre équipe</a></li> \n";   
+							echo "<li><a href=\"?page=4\" class=\"btn_menu $encours[4]\">Archives</a></li> \n"; 
+						?> 
+
+					</ul>
+				</div>
+
+				<div id="contenu">
+
+					<?php // Contenu général de la page en cours
+						if( file_exists("{$projectDir}/lespages/page_".$page.".php") ){ 
+							include("{$projectDir}/lespages/page_".$page.".php");
+						}
+					?>
+				</div>
+					
+				</br></br>
+			 
+
+			
 		
+		</div>
+
 		<div id="pied">
-			<span>Polytech Annecy-Chambéry - Apprentissage Par Projets - Robots</span>
+				<span>Polytech Annecy-Chambéry - Apprentissage Par Projets - Robots</span>
 		</div>
 
 	</body>
