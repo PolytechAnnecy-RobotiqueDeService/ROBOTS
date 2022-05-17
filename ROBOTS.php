@@ -27,7 +27,7 @@
 	
 	<?php
 		// Mécanisme de changements de pages
-	$encours = array(" "," "," "," "," "," ");
+	$encours = array(" "," "," "," "," "," "," ");
 
 		if( !isset($_GET["page"]) ) { 
 			$page=0;
@@ -56,6 +56,7 @@
 							echo "<li><a href=\"?page=5\" class=\"btn_menu $encours[5]\">Les robots</a></li> \n";  
 							echo "<li><a href=\"?page=3\" class=\"btn_menu $encours[3]\">Notre équipe</a></li> \n";   
 							echo "<li><a href=\"?page=4\" class=\"btn_menu $encours[4]\">Archives</a></li> \n"; 
+							echo "<li><a href=\"?page=6\" class=\"btn_menu $encours[6]\">Contact</a></li> \n"; 
 						?> 
 
 					</ul>
