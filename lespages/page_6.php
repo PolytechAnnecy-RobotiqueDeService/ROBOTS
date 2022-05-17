@@ -14,7 +14,8 @@
   	<p>Pour tout renseignement, vous pouvez contacter notre équipe à l'aide des informations suivantes : </p>
   	
   	<?php
-  		/*connection*/
+
+  		/*connection à la BDD*/
   		if(!isset($projectDir)){
 				$projectDir = dirname ( __FILE__ , NIVEAU_HIÉARCHIQUE_DU_FICHIER_COURANT );	
 			} 
@@ -23,27 +24,48 @@
 			}
 
 
-		/*requete*/
-  		$sql = "SELECT id_membre, nom, prenom, mail FROM membre";
-        $result = mysqli_query($conn, $sql) or die("Requête invalide: ". mysqli_error()."\n".$sql);
+		  /*requete pour afficher tous les membres*/
+  		$sql = "SELECT id_membre, nom, prenom, mail FROM ROBOTS_membre";
+      $result = mysqli_query($conn, $sql) or die("Requête invalide: ". mysqli_error()."\n".$sql);
 
-        echo ("<ul>\n");
-        while ($row = mysqli_fetch_assoc($result)) {
-           echo ("<li>\n".$row["nom"]." ".$row["prenom"].", ".$row["mail"]."</li>\n");
-        }
-        echo "</ul>\n";
+      echo ("<ul>\n");
+      while ($row = mysqli_fetch_assoc($result)) {
+          echo ("<li>\n".$row["nom"]." ".$row["prenom"].", ".$row["mail"]."</li>\n");
+      }
+      echo "</ul>\n";
   	?>
 
   	<h1> Commentaires </h1>
   	<p>Pour toutes remarques, vous pouvez aussi nous laissez un commentaire ci-dessous</p>
 
-  	<form>
-  	<input type="textarea">
-    	<nom>Commentaire</nom>
-    	<libellé>Formulez un commentaire</libellé>
-    </input>
-	</form>
+    <form action="/~sangouam/ROBOTS/lespages/page_6.php" method="post">
+  	  <textarea name="commentaire" rows="12" cols="35"></textarea><br>
+      <input type="submit" name="bouton" value="Envoyer">
+    </form>
 
+    <?php
+
+    /* insertion commentaire dans la BDD*/
+    $sql = "INSERT INTO ROBOTS_commentaire(commentaire) VALUES (".$_POST["commentaire"].")";
+
+    ?>
+
+    <h1> Anciens commentaires </h1>
+    <p>Voici tous les commentaires laissés par tous les utilisateurs précédemment !</p>
+
+    <?php
+
+    /*requete pour afficher tous les commentaires*/
+    $sql = "SELECT id_commentaire, commentaire FROM ROBOTS_commentaire";
+    $result = mysqli_query($conn, $sql) or die("Requête invalide: ". mysqli_error()."\n".$sql);
+
+    echo ("<ul>\n");
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo ("<li>\n".$row["commentaire"]."</li>\n");
+    }
+    echo "</ul>\n";
+
+    ?>
   </body>
 
 </html>
