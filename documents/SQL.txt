@@ -1,0 +1,96 @@
+CREATE TABLE Capteur (
+	id_capteur INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	titre VARCHAR(255) NOT NULL,
+    categorie varchar(255),
+	type VARCHAR(255),
+    robot varchar(255),
+    lieux VARCHAR(255),
+	reference VARCHAR(255))
+  
+  
+  
+INSERT INTO Capteur (`titre`,`categorie`, `type`,`robot`, `lieux`, `reference`)
+ VALUES ('LEDS_RGB_oeil_droit_*8','Actionneur', 'LED_RGB','Nao','Tete','' ),
+('LEDS_RGB_oeil_gauche_*8','Actionneur', 'LED_RGB','Nao','Tete','' ),
+('LEDS_RGB_oreilles_gauche_*10','Actionneur', 'LED_RGB','Nao','Tete','' ),
+('LEDS_RGB_oreilles_droite_*10','Actionneur', 'LED_RGB','Nao','Tete','' ),
+('LEDS_RGB_Torse_*1','Actionneur', 'LED_RGB','Nao','Torse','' ),
+('LEDS_RGB_Pied_Droit_*1','Actionneur', 'LED_RGB','Nao','Pied_Droit','' ),
+('LEDS_RGB_Pied_Gauche_*1','Actionneur', 'LED_RGB','Nao','Pied_Gauche','' ),
+('LEDS_Bleu_calotte_*12','Actionneur', 'LED_Bleu','Nao','Tete','' ),
+
+('Interrupteur_Torse','Actionneur', 'Interrupteur','Nao','Torse','' ),
+('Interrupteur_Pied_Droit','Actionneur', 'Interrupteur','Nao','Pied_Droit','' ),
+('Interrupteur_Pied_Gauche','Actionneur', 'Interrupteur','Nao','Pied_Gauche','' ),
+
+('Accelerometre_3_axes','Capteur', 'Accelerometre','Nao','Tete','' ),
+('Gyromètre_2_axes','Capteur', 'Gyromètre','Nao','Tete','' ),
+('Sonars_Torse_*2','Capteur', 'Sonars','Nao','Torse','' ),
+('Capteur_Pression_Droit_FSRs_*4','Capteur', 'FSRs','Nao','Pied_Droit','' ),
+('Capteur_Pression_Gauche_FSRs_*4','Capteur', 'FSRs','Nao','Pied_Gauche','' ),
+('Touche_Capacitive_Tete','Capteur', 'Touches_Capacitives','Nao','Tete','' ),
+
+('Touche_Capacitive_gauche_Main_Droite','Capteur', 'Touches_Capacitives','Nao','Main_Droite','' ),
+('Touche_Capacitive_centre_Main_Droite','Capteur', 'Touches_Capacitives','Nao','Main_Droite','' ),
+('Touche_Capacitive_droit_Main_Droite','Capteur', 'Touches_Capacitives','Nao','Main_Droite','' ),
+('Touche_Capacitive_gauche_Main_Gauche','Capteur', 'Touches_Capacitives','Nao','Main_Gauche','' ),
+('Touche_Capacitive_centre_Main_Gauche','Capteur', 'Touches_Capacitives','Nao','Main_Gauche','' ),
+('Touche_Capacitive_droit_Main_Gauche','Capteur', 'Touches_Capacitives','Nao','Main_Gauche','' ),
+
+
+('Capteur_de_charge','Capteur', 'Batterie','Nao','Torse','' ),
+('Capteur_de_courant','Capteur', 'Batterie','Nao','Torse','' ),
+('Capteur_de_tension','Capteur', 'Batterie','Nao','Torse','' ),
+('Batterie','Actionneur', 'Batterie','Nao','Torse','' ),
+('Camera_haute','Capteur', 'Camera','Nao','Tete','' ),
+('Camera_basse','Capteur', 'Camera','Nao','Tete','' ),
+('Capteur_IR_Droit','Capteur', 'IR','Nao','Tete','' ),
+('Capteur_IR_Gauche','Capteur', 'IR','Nao','Tete','' ),
+('Microphone_Arrière','Capteur', 'Microphone','Nao','Tete','' ),
+('Microphone_Avant','Capteur', 'Microphone','Nao','Tete','' ),
+('Microphone_Gauche','Capteur', 'Microphone','Nao','Tete','' ),
+('Microphone_Droit','Capteur', 'Microphone','Nao','Tete','' ),
+('Haut-Parleur_droit','Actionneur', 'Haut-Parleur','Nao','Tete','' ),
+('Haut-Parleur_Gauche','Actionneur', 'Haut-Parleur','Nao','Tete','' ),
+('Moteurs_Tete_*2','Actionneur', 'Moteurs','Nao','Tete','' ),
+('Processeur','Actionneur', 'Processeur','Nao','Tete','' ),
+
+ ('Moteurs_ShoulderRoll_droit','Actionneur', 'Moteurs','Nao','Bras_Droit','' ),
+ ('Moteurs_ElbowRoll_droit','Actionneur', 'Moteurs','Nao','Bras_Droit','' ),
+ ('Moteurs_ElbowYaw_droit','Actionneur', 'Moteurs','Nao','Bras_Droit','' ),
+ ('Moteurs_WristYaw_droit','Actionneur', 'Moteurs','Nao','Bras_Droit','' ),
+ ('Moteurs_ShoulderPitch_droit','Actionneur', 'Moteurs','Nao','Bras_Droit','' ),
+ 
+  ('Moteurs_ShoulderRoll_Gauche','Actionneur', 'Moteurs','Nao','Bras_Gauche','' ),
+ ('Moteurs_ElbowRoll_Gauche','Actionneur', 'Moteurs','Nao','Bras_Gauche','' ),
+ ('Moteurs_ElbowYaw_Gauche','Actionneur', 'Moteurs','Nao','Bras_Gauche','' ),
+ ('Moteurs_WristYaw_Gauche','Actionneur', 'Moteurs','Nao','Bras_Gauche','' ),
+ ('Moteurs_ShoulderPitch_Gauche','Actionneur', 'Moteurs','Nao','Bras_Gauche','' ),
+ 
+ ('Moteurs_Main_droit','Actionneur', 'Moteurs','Nao','Main_Droite','' ),
+ ('Moteurs_Main_Gauche','Actionneur', 'Moteurs','Nao','Main_Gauche','' ),
+ 
+ ('Moteurs_HipYawPitch_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Droite','' ),
+ ('Moteurs_HipYawPitch_Jambe_Gauche','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
+ 
+  ('Moteurs_HipPitch_Jambe_Gauche','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
+ ('Moteurs_HipPitch_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Droite','' ),
+ 
+ ('Moteurs_KneePitch_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
+ ('Moteurs_KneePitch_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
+ 
+  ('Moteurs_AnklePitch_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Droite','' ),
+ ('Moteurs_AnklePitch_Jambe_Gauche','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
+ 
+   ('Moteurs_HipRoll_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Droite','' ),
+ ('Moteurs_HipRoll_Jambe_Gauche','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
+ 
+    ('Moteurs_AnkleRoll_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Droite','' ),
+ ('Moteurs_AnkleRoll_Jambe_Gauche','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' )
+ 
+ 
+ 
+ 
+ https://lewebpedagogique.com/isneiffel/files/2017/05/Le-Robot-NAO.pdf
+ 
+         
