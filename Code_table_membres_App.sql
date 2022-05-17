@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS Membres_App; 
+
 CREATE TABLE Membres_App
 (
 	id_membre INT NOT NULL AUTO_INCREMENT,
