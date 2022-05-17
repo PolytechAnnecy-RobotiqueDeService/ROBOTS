@@ -30,7 +30,7 @@
 
       echo ("<ul>\n");
       while ($row = mysqli_fetch_assoc($result)) {
-          echo ("<li>\n".$row["nom"]." ".$row["prenom"].", ".$row["mail"]."</li>\n");
+          echo ("<li>\n".$row["nom"]." ".$row["prenom"]." : ".$row["mail"]."</li>\n");
       }
       echo "</ul>\n";
   	?>
@@ -38,15 +38,18 @@
   	<h1> Commentaires </h1>
   	<p>Pour toutes remarques, vous pouvez aussi nous laissez un commentaire ci-dessous</p>
 
-    <form action="/~sangouam/ROBOTS/lespages/page_6.php" method="post">
+    <form action="/~sangouam/ROBOTS/ROBOTS.php" method="get">
   	  <textarea name="commentaire" rows="12" cols="35"></textarea><br>
-      <input type="submit" name="bouton" value="Envoyer">
+      <input type="hidden" name="page" value="6" />
+      <button type="submit">Envoyer</button>
     </form>
 
     <?php
 
     /* insertion commentaire dans la BDD*/
-    $sql = "INSERT INTO ROBOTS_commentaire(commentaire) VALUES (".$_POST["commentaire"].")";
+    if (isset($_GET["commentaire"])) {
+    $sql = "INSERT INTO ROBOTS_commentaire(commentaire) VALUES (".$_GET["commentaire"].")";
+    }
 
     ?>
 
