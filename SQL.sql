@@ -1,4 +1,4 @@
-"""CODE sql"""
+/*CODE sql*/
 
 DROP TABLE IF EXISTS `ROBOTS_media`;
 
@@ -11,12 +11,22 @@ CREATE TABLE `ROBOTS_media` (
 	
 DROP TABLE IF EXISTS `ROBOTS_document`;
 
+
 CREATE TABLE `ROBOTS_document` (
 	`id_document` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`titre` VARCHAR(255) NOT NULL,
 	`type` VARCHAR(255),
 	`date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 	`lien` VARCHAR(255));
+
+
+DROP TABLE IF EXISTS `ROBOTS_membre`;
+
+CREATE TABLE `ROBOTS_membre` (
+	`id_membre` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	`nom` VARCHAR(255) NOT NULL,
+	`prenom` VARCHAR(255) NOT NULL,
+	`mail` VARCHAR(255));
 	
 	
 
@@ -32,9 +42,34 @@ INSERT INTO `ROBOTS_document` (`titre`, `type`, `date`, `lien`)
 VALUES ("test1_doc", "cr", '2022-05-09 14:00:00', "https://docs.google.com/document/d/1pa7nZDWT_BkugpsqJcrKRhalMSvmP7PIaBzFGjDPNWw/edit?usp=sharing");
 
 
+INSERT INTO `ROBOTS_membre` (`nom`, `prenom`, `mail`)
+VALUES ("SANGOUARD", "Marine", "marine.sangouard@gmail.com");
+
+INSERT INTO `ROBOTS_membre` (`nom`, `prenom`, `mail`)
+VALUES ("JENNY", "Camille", "");
+
+INSERT INTO `ROBOTS_membre` (`nom`, `prenom`, `mail`)
+VALUES ("LEGLISE", "Cloé", "m");
+
+INSERT INTO `ROBOTS_membre` (`nom`, `prenom`, `mail`)
+VALUES ("ROY", "Nicolas", "");
+
+INSERT INTO `ROBOTS_membre` (`nom`, `prenom`, `mail`)
+VALUES ("RUIZ", "Florian", "");
+
+INSERT INTO `ROBOTS_membre` (`nom`, `prenom`, `mail`)
+VALUES ("MISON", "Jules", "");
+
+INSERT INTO `ROBOTS_membre` (`nom`, `prenom`, `mail`)
+VALUES ("M", "Mehdi", "");
+
+INSERT INTO `ROBOTS_membre` (`nom`, `prenom`, `mail`)
+VALUES ("SAHL", "Hamza", "");
 
 
-"""requètes php :
+
+
+/*requètes php :
 
 MEDIAS :
 RECUPERER les titres des médias : 								OK
@@ -60,7 +95,7 @@ RECUPERER les dates des documents :
 RECUPERER les liens des comptes rendus : 
 	SELECT lien FROM ROBOTS_document WHERE type='cr';			OK
 
-"""
+*/
 
 
 
