@@ -1,3 +1,4 @@
+Drop table if exists Capteur;
 CREATE TABLE Capteur (
 	id_capteur INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	titre VARCHAR(255) NOT NULL,
@@ -5,7 +6,7 @@ CREATE TABLE Capteur (
 	type VARCHAR(255),
     robot varchar(255),
     lieux VARCHAR(255),
-	reference VARCHAR(255))
+	reference VARCHAR(255));
   
   
   
@@ -55,42 +56,111 @@ INSERT INTO Capteur (`titre`,`categorie`, `type`,`robot`, `lieux`, `reference`)
 ('Moteurs_Tete_*2','Actionneur', 'Moteurs','Nao','Tete','' ),
 ('Processeur','Actionneur', 'Processeur','Nao','Tete','' ),
 
- ('Moteurs_ShoulderRoll_droit','Actionneur', 'Moteurs','Nao','Bras_Droit','' ),
- ('Moteurs_ElbowRoll_droit','Actionneur', 'Moteurs','Nao','Bras_Droit','' ),
- ('Moteurs_ElbowYaw_droit','Actionneur', 'Moteurs','Nao','Bras_Droit','' ),
- ('Moteurs_WristYaw_droit','Actionneur', 'Moteurs','Nao','Bras_Droit','' ),
- ('Moteurs_ShoulderPitch_droit','Actionneur', 'Moteurs','Nao','Bras_Droit','' ),
+('Moteurs_ShoulderRoll_droit','Actionneur', 'Moteurs','Nao','Bras_Droit','' ),
+('Moteurs_ElbowRoll_droit','Actionneur', 'Moteurs','Nao','Bras_Droit','' ),
+('Moteurs_ElbowYaw_droit','Actionneur', 'Moteurs','Nao','Bras_Droit','' ),
+('Moteurs_WristYaw_droit','Actionneur', 'Moteurs','Nao','Bras_Droit','' ),
+('Moteurs_ShoulderPitch_droit','Actionneur', 'Moteurs','Nao','Bras_Droit','' ),
  
-  ('Moteurs_ShoulderRoll_Gauche','Actionneur', 'Moteurs','Nao','Bras_Gauche','' ),
- ('Moteurs_ElbowRoll_Gauche','Actionneur', 'Moteurs','Nao','Bras_Gauche','' ),
- ('Moteurs_ElbowYaw_Gauche','Actionneur', 'Moteurs','Nao','Bras_Gauche','' ),
- ('Moteurs_WristYaw_Gauche','Actionneur', 'Moteurs','Nao','Bras_Gauche','' ),
- ('Moteurs_ShoulderPitch_Gauche','Actionneur', 'Moteurs','Nao','Bras_Gauche','' ),
+('Moteurs_ShoulderRoll_Gauche','Actionneur', 'Moteurs','Nao','Bras_Gauche','' ),
+('Moteurs_ElbowRoll_Gauche','Actionneur', 'Moteurs','Nao','Bras_Gauche','' ),
+('Moteurs_ElbowYaw_Gauche','Actionneur', 'Moteurs','Nao','Bras_Gauche','' ),
+('Moteurs_WristYaw_Gauche','Actionneur', 'Moteurs','Nao','Bras_Gauche','' ),
+('Moteurs_ShoulderPitch_Gauche','Actionneur', 'Moteurs','Nao','Bras_Gauche','' ),
  
- ('Moteurs_Main_droit','Actionneur', 'Moteurs','Nao','Main_Droite','' ),
- ('Moteurs_Main_Gauche','Actionneur', 'Moteurs','Nao','Main_Gauche','' ),
+('Moteurs_Main_droit','Actionneur', 'Moteurs','Nao','Main_Droite','' ),
+('Moteurs_Main_Gauche','Actionneur', 'Moteurs','Nao','Main_Gauche','' ),
  
- ('Moteurs_HipYawPitch_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Droite','' ),
- ('Moteurs_HipYawPitch_Jambe_Gauche','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
+('Moteurs_HipYawPitch_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Droite','' ),
+('Moteurs_HipYawPitch_Jambe_Gauche','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
+('Moteurs_HipPitch_Jambe_Gauche','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
+('Moteurs_HipPitch_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Droite','' ),
  
-  ('Moteurs_HipPitch_Jambe_Gauche','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
- ('Moteurs_HipPitch_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Droite','' ),
+('Moteurs_KneePitch_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
+('Moteurs_KneePitch_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
  
- ('Moteurs_KneePitch_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
- ('Moteurs_KneePitch_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
+('Moteurs_AnklePitch_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Droite','' ),
+('Moteurs_AnklePitch_Jambe_Gauche','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
  
-  ('Moteurs_AnklePitch_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Droite','' ),
- ('Moteurs_AnklePitch_Jambe_Gauche','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
+('Moteurs_HipRoll_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Droite','' ),
+('Moteurs_HipRoll_Jambe_Gauche','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
  
-   ('Moteurs_HipRoll_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Droite','' ),
- ('Moteurs_HipRoll_Jambe_Gauche','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' ),
- 
-    ('Moteurs_AnkleRoll_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Droite','' ),
- ('Moteurs_AnkleRoll_Jambe_Gauche','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' )
- 
+('Moteurs_AnkleRoll_Jambe_Droite','Actionneur', 'Moteurs','Nao','Jambes_Droite','' ),
+('Moteurs_AnkleRoll_Jambe_Gauche','Actionneur', 'Moteurs','Nao','Jambes_Gauche','' );
  
  
  
- https://lewebpedagogique.com/isneiffel/files/2017/05/Le-Robot-NAO.pdf
  
-         
+ 
+ 
+ 
+INSERT INTO Capteur (`titre`,`categorie`, `type`,`robot`, `lieux`, `reference`)
+ VALUES ('LEDS_RGB_oeil_droit_*8','Actionneur', 'LED_RGB','Pepper','Tete','' ),
+('LEDS_RGB_oeil_gauche_*8','Actionneur', 'LED_RGB','Pepper','Tete','' ),
+('LEDS_RGB_oreille_droite_*10','Actionneur', 'LED_Bleu','Pepper','Tete','' ),
+('LEDS_RGB_oreille_gauche_*10','Actionneur', 'LED_Bleu','Pepper','Tete','' ),
+('LEDS_RGB_épaules_gauche_*2','Actionneur', 'LED_RGB','Pepper','Torse','' ),
+('LEDS_RGB_épaules_droite_*2','Actionneur', 'LED_RGB','Pepper','Torse','' ),
+('3D_Camera','Capteur', 'Camera','Pepper','Tete','' ),
+('2D_Camera_Haute','Capteur', 'Camera','Pepper','Tete','' ),
+('2D_Camera_Basse','Capteur', 'Camera','Pepper','Tete','' ),
+('Micro_Avant_Droit','Capteur', 'Micro','Pepper','Tete','' ),
+('Micro_Arrier_Droit','Capteur', 'Micro','Pepper','Tete','' ),
+('Micro_Avant_Gauche','Capteur', 'Micro','Pepper','Tete','' ),
+('Micro_Avant_Gauche','Capteur', 'Micro','Pepper','Tete','' ),
+('Haut-Parleur_Droit','Actionneur', 'Haut-Parleur','Pepper','Tete','' ),
+('Haut-Parleur_Gauche','Actionneur', 'Haut-Parleur','Pepper','Tete','' ),
+ 
+('Moteurs_HeadYaw','Actionneur', 'Moteurs','Pepper','Tete','' ),
+('Moteurs_HeadPitch','Actionneur', 'Moteurs','Pepper','Tete','' ),
+('Moteurs_ShoulderPitch_Bras_droit','Actionneur', 'Moteurs','Pepper','Bras_Droit','' ),
+('Moteurs_ShoulderRoll_Bras_droit','Actionneur', 'Moteurs','Pepper','Bras_Droit','' ),
+('Moteurs_ElbowYaw_Bras_droit','Actionneur', 'Moteurs','Pepper','Bras_Droit','' ),
+('Moteurs_ElbowRoll_Bras_droit','Actionneur', 'Moteurs','Pepper','Bras_Droit','' ),
+('Moteurs_ShoulderPitch_Bras_gauche','Actionneur', 'Moteurs','Pepper','Bras_Gauche','' ),
+('Moteurs_ShoulderRoll_Bras_gauche','Actionneur', 'Moteurs','Pepper','Bras_Gauche','' ),
+('Moteurs_ElbowYaw_Bras_gauche','Actionneur', 'Moteurs','Pepper','Bras_Gauche','' ),
+('Moteurs_ElbowRoll_Bras_gauche','Actionneur', 'Moteurs','Pepper','Bras_Gauche','' ),
+('Moteurs_WristYaw_Main_Droite','Actionneur', 'Moteurs','Pepper','Main_Droite','' ),
+('Moteurs_Hand_Main_Droite','Actionneur', 'Moteurs','Pepper','Main_Droite','' ),
+('Moteurs_WristYaw_Main_Gauche','Actionneur', 'Moteurs','Pepper','Main_Gauche','' ),
+('Moteurs_Hand_Main_Gauche','Actionneur', 'Moteurs','Pepper','Main_Gauche','' ),
+('Moteurs_HipRoll','Actionneur', 'Moteurs','Pepper','Jambes','' ),
+('Moteurs_KneePitch','Actionneur', 'Moteurs','Pepper','Jambes','' ),
+('Moteurs_HipPitch','Actionneur', 'Moteurs','Pepper','Jambes','' ),
+('Moteurs_WheelFL','Actionneur', 'Moteurs','Pepper','Jambes','' ),
+('Moteurs_WheelFR','Actionneur', 'Moteurs','Pepper','Jambes','' ),
+('Moteurs_WheelB','Actionneur', 'Moteurs','Pepper','Jambes','' ),
+('Batterie','Actionneur', 'Batterie','Pepper','Torse','' ),
+
+ ('laser_milieu','Capteur', 'Laser','Pepper','Jambes','' ), 
+ ('laser_gauche','Capteur', 'Laser','Pepper','Jambes','' ), 
+ ('laser_droit','Capteur', 'Laser','Pepper','Jambes','' ),
+ ('IR_droit','Capteur', 'IR','Pepper','Jambes','' ),
+ ('IR_gauche','Capteur', 'IR','Pepper','Jambes','' ),
+ ('sonar_arrière','Capteur', 'Sonars','Pepper','Jambes','' ),
+ ('sonar_avant','Capteur', 'Sonars','Pepper','Jambes','' ),
+ ('capteur_effet_Hall_*30','Capteur', 'Capteur_effet_Hall','Pepper','Torse','' ),
+ ('unité_inertielle_roue_gauche','Capteur', 'Accelerometre','Pepper','Jambes','' ),
+ ('unité_inertielle_roue_droite','Capteur', 'Accelerometre','Pepper','Jambes','' ),
+ ('unité_inertielle_roue_arrière','Capteur', 'Accelerometre','Pepper','Jambes','' ),
+ ('unité_inertielle_genoux','Capteur', 'Accelerometre','Pepper','Jambes','' ),
+ ('unité_inertielle_bassin','Capteur', 'Accelerometre','Pepper','Jambes','' ),
+ ('unité_inertielle_épaule_gauche','Capteur', 'Accelerometre','Pepper','Torse','' ),
+ ('unité_inertielle_épaule_droite','Capteur', 'Accelerometre','Pepper','Torse','' ),
+ ('unité_inertielle_coude_gauche','Capteur', 'Accelerometre','Pepper','Bras_Gauche','' ),
+ ('unité_inertielle_coude_droit','Capteur', 'Accelerometre','Pepper','Bras_Droit','' ),
+ ('unité_inertielle_main_gauche','Capteur', 'Accelerometre','Pepper','Bras_Gauche','' ),
+ ('unité_inertielle_main_droite','Capteur', 'Accelerometre','Pepper','Bras_Droit','' ),
+ ('unité_inertielle cou','Capteur', 'Accelerometre','Pepper','tête','' ),
+ ('bouton_poitrine','Capteur', 'Touches_Capacitives','Pepper','Torse','' ),
+ ('bouton_STOP','Capteur', 'Touches_Capacitives','Pepper','Torse','' ),
+ ('bouton_dos_main_gauche','Capteur', 'Touches_Capacitives','Pepper','Bras_Gauche','' ),
+ ('bouton_dos_main_droite','Capteur', 'Touches_Capacitives','Pepper','Bras_Droit','' ),
+ ('bouton_tête_avant','Capteur', 'Touches_Capacitives','Pepper','Tete','' ),
+ ('bouton_tête_milieu','Capteur', 'Touches_Capacitives','Pepper','Tete','' ),
+ ('bouton_tête_arrière','Capteur', 'Touches_Capacitives','Pepper','Tete','' ),
+ ('bouton_bumper_avant_gauche','Capteur', 'Touches_Capacitives','Pepper','Jambes','' ),
+ ('bouton_bumper_avant_droit','Capteur', 'Touches_Capacitives','Pepper','Jambes','' ),
+ ('bouton_bumper_arrière','Capteur', 'Touches_Capacitives','Pepper','Jambes','' );
+    
