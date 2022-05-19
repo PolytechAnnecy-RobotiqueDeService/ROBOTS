@@ -1,0 +1,53 @@
+.titre{
+	color: rgb(255, 0, 0);
+}
+
+.robot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divNao {
+  float:right;
+  text-align: center;
+  width: 50%;
+}
+
+.imgNao {
+  width: 50%;	
+}
+
+.divPepper {
+  float:left;
+  text-align: center;
+  width: 50%;
+}
+
+.imgPepper {
+  width: 50%;	
+}
+
+.texte{
+	top : 5px;
+	text-align: justify;
+}
+
+/*pour le bouton plus d'info******************************************/
+div.spoiler {
+	top : 10px;
+    padding: 20px 10px 10px 10px;
+    position: relative;
+}
+ 
+div.spoiler input.boutonSpoiler {
+    position: absolute;
+    top: -5px;
+    left: 0px;
+	font-size: x-small;
+}
+ 
+div.spoiler div.contenuSpoiler {
+    display: none;
+}
+/***************************************************************/
