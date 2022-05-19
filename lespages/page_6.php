@@ -39,7 +39,7 @@
   	<p>Pour toutes remarques, vous pouvez aussi nous laissez un commentaire ci-dessous</p>
 
     <form action="/~sangouam/ROBOTS/ROBOTS.php" method="get">
-  	  <textarea name="commentaire" rows="12" cols="35"></textarea><br>
+  	  <textarea name="commentaire" rows="10" cols="30"></textarea><br>
       <input type="hidden" name="page" value="6" />
       <button type="submit">Envoyer</button>
     </form>
@@ -48,8 +48,9 @@
 
     /* insertion commentaire dans la BDD*/
     if (isset($_GET["commentaire"])) {
-    $sql = "INSERT INTO ROBOTS_commentaire(commentaire) VALUES (".$_GET["commentaire"].")";
+    $sql = "INSERT INTO ROBOTS_commentaire(commentaire) VALUES (".$_GET["commentaire"].");";
     }
+    $result = mysqli_query($conn, $sql) or die("Requête invalide: ". mysqli_error()."\n".$sql);
 
     ?>
 
