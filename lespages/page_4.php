@@ -94,7 +94,7 @@
                                 <summary><b>".$seance[$b]."</b></summary>"; // titre de la séance
                                     echo "<div class='text'><br>".$date_seance[$b]
                                         .$compterendu[$b]
-                                        ."<a href=\"./documents/comptes_rendus/compte_rendu_".$b.".pdf\" target=’_blank’>Compte-rendu de la séance ".$b."</a>
+                                        ."<button class = 'bouton'><a href=\"./documents/compterendus/compte_rendu_".$b.".pdf\" target=’_blank’>Compte-rendu de la séance ".$b."</a></button>
                                     </div>"; // date, résumé et lien du compte-rendu de la séance
                             echo "</details>
                         </div>
