@@ -1,0 +1,89 @@
+body {
+  /*background-image: url('https://i.pinimg.com/originals/da/42/64/da4264a33bbcfcd56d3cb80e26430518.png');*/
+  margin: 0;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Style the topnav links */
+/*.topnav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+/*.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}*/
+
+#fond {
+  text-align: center;
+}
+
+#inner {
+  background-color: lightgrey;
+  color: blue;
+}
+
+ {
+  text-indent: 50px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+#image1 {
+  border-radius: 2%;
+  height: 400px;
+  width: 800px;
+}
+
+#naopepp {
+  display: flex;
+  background-color: black;
+  color: white;
+}
+
+#pepper {
+  border-radius: 5%;
+  height: 400px;
+  width: 800px;
+}
+
+#nao {
+  border-radius: 5%;
+  height: 400px;
+  width: 750px;
+}
+
+#h2nao {
+  text-align: center;
+  color: red;
+}
+#h2pep{
+  text-align: center;
+  color: red;
+}
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.son {
+  width: 40%;
+  border: blue 2 solid;
+  margin-left: 5%
+}
+#fott{
+  text-align: center;
+  color: red;
+}
