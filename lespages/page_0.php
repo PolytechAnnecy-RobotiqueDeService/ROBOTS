@@ -67,7 +67,7 @@
 			</div>
 			<div class="son">
 				<h2 id="h2nao">Robot NAO </h2>
-				<img id="nao" src="nao.jpg" /><br>
+				<img id="nao" src="Rnao.jpg" /><br>
 				<h2>NAO est le premier robot humanoïde créé par SoftBank Robotics. Aujourd'hui à sa 6ème version, NAO
 					est
 					célèbre dans le monde entier. Formidable outil de programmation, il est devenu une référence dans
