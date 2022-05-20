@@ -26,72 +26,72 @@
 
 	<p> Pour couvrir les différentes axes de notre projet, Notre Equipe est composée de 8 membres de différentes formations, répartissant les différentes tâches tout au long du projet pour pouvoir effectuer la globalité des tâches nécessaires dans notre projet.<br> L'organisation de notre équipe est composée comme suit: </p>
 	
+	<h2>Chef du projet</h2>
 	<div class="team">
-		<h2>Chef du projet</h2>
 		<div class="membre">
-			<img src="documents/images/Equipe_Florian.jpg" alt="Avatar">
+			<img src="documents/images/Equipe_Florian_crop.jpg" alt="Avatar">
 			<div class="overlay">
 				<div class="text">Florian Ruiz</div>
 			</div>
 		</div>
 	</div>
 	
+	<h2> L'équipe de Gestion du robot Pepper:</h2>
 	<div class="team">
-		<h2> L'équipe de Gestion du robot Pepper:</h2>
 		<div class="membre">
-			<img src="documents/images/Equipe_Nicolas.jpg">
+			<img src="documents/images/Equipe_Nicolas_crop.jpg">
 			<div class="overlay">
 				<div class="text">Nicolas Roy</div>
 			</div>
 		</div>
 		<div class="membre">
-			<img src="documents/images/Equipe_Camille.jpg">
+			<img src="documents/images/Equipe_Camille_crop.jpg">
 			<div class="overlay">
 				<div class="text">Camille Jenny</div>
 			</div>
 		</div>
 		<div class="membre">
-			<img src="documents/images/Equipe_Chloé.jpg">
+			<img src="documents/images/Equipe_Cloe_crop.jpg">
 			<div class="overlay">
 				<div class="text">Chloé Léglise</div>
 			</div>
 		</div>
 	</div>
 	
+	<h2> Responsable de la gestion du Robot Nao: </h2>
 	<div class="team">
-		<h2> Responsable de la gestion du Robot Nao: </h2>
 		<div class="membre">
-			<img src="documents/images/Equipe_Jules.jpg">
+			<img src="documents/images/Equipe_Jules_crop.jpg">
 			<div class="overlay">
 				<div class="text">Jules Mison</div>
 			</div>
 		</div>
 	</div>
 	
+	<h2> Responsable de la gestion du projet: </h2>
 	<div class="team">
-		<h2> Responsable de la gestion du projet: </h2>
 		<div class="membre">
-			<img src="documents/images/Equipe_Marine.jpg">
+			<img src="documents/images/Equipe_Marine_crop.jpg">
 			<div class="overlay">
 				<div class="text">Marine Sangouard</div>
 			</div>
 		</div>
 	</div>
 	
+	<h2> Responsable de la gestion du Serveur: </h2>
 	<div class="team">
-		<h2> Responsable de la gestion du Serveur: </h2>
 		<div class="membre">
-			<img src="documents/images/Equipe_Mehdi.jpg">
+			<img src="documents/images/Equipe_Mehdi_crop.jpg">
 			<div class="overlay">
 				<div class="text">Mehdi Benhima</div>
 			</div>
 		</div>
 	</div>
 	
+	<h2> Responsable de la gestion de la tablette de Pepper: </h2>
 	<div class="team">
-		<h2> Responsable de la gestion de la tablette de Pepper: </h2>
 		<div class="membre">
-			<img src="documents/images/Equipe_Hamza.jpg">
+			<img src="documents/images/Equipe_Hamza_crop.jpg">
 			<div class="overlay">
 				<div class="text">Hamza Salh</div>
 			</div>
