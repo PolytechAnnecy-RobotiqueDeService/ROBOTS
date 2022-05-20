@@ -69,7 +69,7 @@
 
                 while (isset($seance[$b])){ //parcours des séances
                     echo "<div class='seance'><li><h3> ".$seance[$b]."</h3></li> "; 
-                    echo "<div class='text'><span class ='cr'>".$date_seance[$b].$compterendu[$b]."<a href=\"./documents/compterendus/APP_Robot_Seance_".$b.".pdf\" target=’_blank’>Compte-rendu de la séance ".$b."</a></span></div>";
+                    echo "<div class='text'><span class ='cr'>".$date_seance[$b].$compterendu[$b]."<a href=\"./documents/compterendus/compte_rendu_".$b.".pdf\" target=’_blank’>Compte-rendu de la séance ".$b."</a></span></div>";
                     echo "</div></br>";
 
                     $b++;
