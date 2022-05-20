@@ -20,7 +20,7 @@
         /*Encodage UTF8 pour les échanges avecla BD*/
         mysqli_query($conn, "SET NAMES UTF8");
     }
-	echo $msg;
+	//echo $msg;
 ?>
 
 <h1 class='titre'>Les Robots : </h1>
@@ -139,7 +139,7 @@ if (isset($_GET["Actionneur"])){
    
    
    $sql = "SELECT * FROM `Capteur` WHERE  categorie = ".(string)$Actionneur." and type = ".(string)$Type." and robot = ".(string)$robot." and lieux = ".(string)$lieux;
-   echo $sql;
+   //echo $sql;
    $result = mysqli_query($conn, $sql) or die("Requête invalide: ". mysqli_error()."\n".$sql);
    /*
    while ($row = mysqli_fetch_assoc($result)) { //on extrait les capteurs 
