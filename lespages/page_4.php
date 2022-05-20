@@ -70,6 +70,7 @@
 
             $b=1; //compteur du numéro des séances
 
+
             echo"<ul>"; //début de la liste des séances
 
                 while (isset($seance[$b])){ //parcours des séances via le compteur $b
@@ -83,6 +84,7 @@
                             echo "</details>
                         </div>
                     <br>";
+
 
                     $b++;
 
