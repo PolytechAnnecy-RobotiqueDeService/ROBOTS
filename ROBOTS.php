@@ -11,7 +11,7 @@
 	
   
 	<?php
-		// Définition de variables 
+		/* DÉFINITION DES VARIABLES DU CODE */
 		if(!isset($projectDir)){
 			$projectDir = dirname ( __FILE__ , 1 );	
 		}
@@ -23,10 +23,16 @@
 				$basehttp = "https://tp-epua.univ-smb.fr/~VOTRE_LOGIN/";
 			}			
 		}
+		
+		//Connection à la BDD:
+  		if( file_exists("{$projectDir}/lespages/bd_connection.php") ){ 
+			include("{$projectDir}/lespages/bd_connection.php");
+		}
 	?>
 	
 	<?php
-		// Mécanisme de changements de pages
+		/* MÉCANISME DE CHANGEMENT DE PAGE */ 
+
 	$encours = array(" "," "," "," "," "," "," ");
 
 		if( !isset($_GET["page"]) ) { 
@@ -37,11 +43,11 @@
 		$encours[$page] = "encours";
 	?>
 
-	<body>
+	<body> <!-- CONTENU PRINCIPAL DE LA PAGE -->
 		<div id="fond">
 			</br>
 			<div id="titre">
-				<span>APP ROBOTS</span>
+				<span>APP ROBOTS</span> <!-- titre du site -->
 			 </div>
 			</br>
 			
@@ -49,7 +55,7 @@
 				<div id="menu">
 					<ul id="lemenu">
 					
-						<?php // Liste des pages pages dans des boutons pour le menu
+						<?php // Liste et liens des pages dans des boutons pour le menu
 							echo "<li><a href=\"?page=0\" class=\"btn_menu $encours[0]\">Accueil</a></li>\n";
 							echo "<li><a href=\"?page=1\" class=\"btn_menu $encours[1]\">Objectifs</a></li>\n";
 							echo "<li><a href=\"?page=2\" class=\"btn_menu $encours[2]\">Avancement</a></li> \n";  
@@ -62,11 +68,12 @@
 					</ul>
 				</div>
 
-				<div id="contenu">
+				<div id="contenu"> <!-- division réservé au contenu des pages -->
 
-					<?php // Contenu général de la page en cours
+					<?php // inclusion de la page voulue dans la division conçue pour
 						if( file_exists("{$projectDir}/lespages/page_".$page.".php") ){ 
 							include("{$projectDir}/lespages/page_".$page.".php");
+							include("{$projectDir}/lespages/page_".$page.".css");
 						}
 					?>
 				</div>
