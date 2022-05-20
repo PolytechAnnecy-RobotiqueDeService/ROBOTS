@@ -5,7 +5,7 @@
     <title></title>
     <meta content="info">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="archive.css"/>
+    <link rel="stylesheet" href="page_4.css"/>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
                     "; //début du semestre
 
             if (isset($presentation_semestre[$a])){
-                echo "<div class='text'>".$presentation_semestre[$a]."</div>";
+                echo "<div class='text'>".$presentation_semestre[$a]."</div><br>";
             }
 
             $b=1; //compteur du numéro des séances
