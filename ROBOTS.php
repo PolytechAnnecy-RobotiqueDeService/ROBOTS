@@ -23,6 +23,11 @@
 				$basehttp = "https://tp-epua.univ-smb.fr/~VOTRE_LOGIN/";
 			}			
 		}
+		
+		//Connection à la BDD:
+  		if( file_exists("{$projectDir}/lespages/bd_connection.php") ){ 
+			include("{$projectDir}/lespages/bd_connection.php");
+		}
 	?>
 	
 	<?php
