@@ -25,7 +25,7 @@
     font-family: Helvetica;
     font-weight:bold;
     font-size: 22pt;
-    color : white;
+    color :#fffffe;
   }
   
   
@@ -59,13 +59,11 @@
     min-height: 600px;
     border:2px solid;
     border-color: #001e1d;
-    background-color: #004643;
+    background-color: #cde4de;
     margin-right: 10px;
     margin-left: 10px;
     text-align: justify;
     text-justify: inter-word;
-    padding-left: 10px;
-    padding-right: 10px;
   }ul#lemenu li
   
   #pied{
@@ -73,20 +71,20 @@
     margin: 10px 0px 10px 0px;
     background-color:#004643;
     flex-basis: 100%;
-    color: white;
+    color: #e8e4e6;
   }
   
   
   /* Gestion des boutons */
   
   .btn_menu {
-      -moz-box-shadow:inset 7px 1px 24px -22px #fff6af;
-      -webkit-box-shadow:inset 7px 1px 24px -22px #fff6af;
-      box-shadow:inset 7px 1px 24px -22px #fff6af;
-      background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23) );
-      background:-moz-linear-gradient( center top, #ffec64 5%, #ffab23 100% );
+      -moz-box-shadow:inset 7px 1px 24px -22px #f9bc60;
+      -webkit-box-shadow:inset 7px 1px 24px -22px #f9bc60;
+      box-shadow:inset 7px 1px 24px -22px #f9bc60;
+      background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffb445), color-stop(1, #ffca7b) );
+      background:-moz-linear-gradient( center top, #f9bc60 5%, #ffaa2b 100% );
       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23');
-      background-color:#ffec64;
+      background-color:#f9bc60;
       -webkit-border-top-left-radius:15px;
       -moz-border-radius-topleft:15px;
       border-top-left-radius:15px;
@@ -105,7 +103,7 @@
       border-bottom: 2px solid #001e1d;
       border-left: 2px solid #001e1d;
       display:inline-block;
-      color:#333333;
+      color:#001e1d;
       font-family:Arial Black;
       font-size:16px;
       font-weight:bold;
@@ -118,16 +116,16 @@
   }
   
   .btn_menu:hover {
-      background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64) );
+      background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff9d2d), color-stop(1, #ffb84e) );
       background:-moz-linear-gradient( center top, #a6a39f 5%, #f0eee2 100% );
       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64');
-      background-color:#ffab23;
+      background-color:#e1a13b;
   }
   
   .encours, .encours:hover {
     position:relative;
     height:37px;
-    background: rgb(146, 213, 215);
+    background: #abd1c6;
   }
 
 
