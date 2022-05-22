@@ -1,0 +1,47 @@
+img{
+    max-width : 200px;
+    max-height : 200px;
+    margin : 20px;
+}
+
+div#galerie_photo{
+    position:relative;
+}
+
+div#image{
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+h1{
+    font-family: Chalkduster, sans-serif;
+}
+
+p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: Chalkduster, sans-serif;
+}
+
+li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: Chalkduster, sans-serif;
+}
+
+div#titre{
+    width : auto;
+    height : auto;
+    margin : 20px;
+}
+
+p#video1{
+    text-align: center;
+}
