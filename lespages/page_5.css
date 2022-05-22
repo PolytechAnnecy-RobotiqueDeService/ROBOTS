@@ -1,6 +1,6 @@
 .robot{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -11,20 +11,32 @@
   float:right;
   text-align: center;
   width: 50%;
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .imgNao {
-  width: 50%;	
+  height: 300px;	
 }
 
 .divPepper {
   float:left;
   text-align: center;
   width: 50%;
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .imgPepper {
-  width: 50%;	
+  height: 300px;	
 }
 
 
@@ -37,7 +49,7 @@
 /*pour le tableau*/
 table,
 td {
-    border: 1px solid #333;
+    border: 1px solid #004643;
 }
 
 thead,
@@ -53,15 +65,11 @@ tfoot {
 
 /*pour le bouton plus d'info******************************************/
 div.spoilerPepper {
-  float:left;
-  text-align: center;
-  width: 50%;
+  
 }
 
 div.spoilerNao {
-  float:right;
-  text-align: center;
-  width: 50%;
+  
 }
  
 input.boutonSpoiler {
@@ -72,5 +80,7 @@ input.boutonSpoiler {
  
  div.contenuSpoiler {
     display: none;
+	padding: 7px;
+	text-align: justify;
 }
 /***************************************************************/
