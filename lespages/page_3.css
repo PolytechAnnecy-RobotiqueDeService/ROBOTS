@@ -2,6 +2,10 @@ h2 {
 	text-align:center;
 }
 
+#teamPicture{
+	width:80%;
+}
+
 .team {
 	width: auto;
 	background-color: #004643;

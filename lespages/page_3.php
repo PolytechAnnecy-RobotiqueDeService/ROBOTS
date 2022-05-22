@@ -10,7 +10,7 @@
 		<div id="Team">
 			<h1>L'équipe</h1>
 			<p> L'apprentissage par projets "APP" est un projet qui accompagne les élèves de la filière SNI tout au long de leur formation, ce projet est basé sur un travail d'équipe dans un contexte de mise en situation professionnelle où l'élève est acteur de sa formation. <br>La "Robotique de service" est un thème important présent parmi les APP, qui permet aux étudiants de gérer un projet et d'approfondir leur savoir dans plusieurs domaines. <br> <br> <br>La photo ci-dessous réunit Les membres de la promotion 2024 de l'équipe de l'APP du thème "Robotique de service": </p>
-			<img src="documents/images/Team.jpg" alt="id1" width="700">
+			<img id="teamPicture" src="documents/images/Team.jpg" alt="id1">
 			<br> <br> <br>
 		</div>
 
