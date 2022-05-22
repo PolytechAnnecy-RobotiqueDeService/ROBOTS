@@ -27,11 +27,11 @@
             mysqli_query($conn, "SET NAMES UTF8");
         }	
   ?> 
-	<form action="/action_page_0.php">
+	<!--<form action="/action_page_0.php">
 	  <label for="gsearch">Recherche:</label>
 	  <input type="search" id="gsearch" name="gsearch">
 	  <a href=""><input type="button" value="Find">
-	</form><!--pour creér un forum de recherche qui permet aux visiteure de faire la recherche sur la page, label pour le text et un botton d'entrer lier à l'action à faire-->
+	</form>	pour creér un forum de recherche qui permet aux visiteure de faire la recherche sur la page, label pour le text et un botton d'entrer lier à l'action à faire-->
 	
 	<div class="container">
 		<div id="fond">
