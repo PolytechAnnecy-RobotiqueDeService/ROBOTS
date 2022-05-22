@@ -1,19 +1,22 @@
-
-
 h2 {
 	text-align:center;
 }
 
 .team {
+	width: auto;
+	background-color: #0081AF;
+	padding: 5px;
+	border-radius: 10px;
+	display: inline-block;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .membre {
 	position: relative;
 	width: 50%;
-	
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
 }
 
 
@@ -33,7 +36,7 @@ h2 {
 	width: 100%;
 	opacity: 0;
 	transition: .5s ease;
-	background-color: #008CBA;
+	background-color: #0081AF;
 }
 
 .membre:hover .overlay {
