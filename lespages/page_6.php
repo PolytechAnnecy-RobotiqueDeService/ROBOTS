@@ -5,7 +5,7 @@
   <head>
 	<title>APP Robots</title>
 	<meta charset="UTF-8">
-    <link rel="stylesheet" media="screen" href="lespages/ROBOTS.css" /> 
+    <link rel="stylesheet" media="screen" href="lespages/page_6.css" /> 
 	<link rel="icon" type="image/png" sizes="16x16" href="documents/icone_site.png"> 
   </head>
 	
@@ -29,7 +29,7 @@
   	<p>Pour toutes remarques, vous pouvez aussi nous laissez un commentaire ci-dessous</p>
 
     <form action="ROBOTS.php" method="get">
-		<textarea name="commentaire" rows="10" cols="30" required></textarea><br>
+		<textarea id="boiteCommentaires" name="commentaire" rows="10" cols="30" required></textarea><br>
 		<input type="hidden" name="page" value="6" />
 		<button type="submit">Envoyer</button>
     </form>
