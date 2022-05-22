@@ -73,7 +73,7 @@
 					<?php // inclusion de la page voulue dans la division conçue pour
 						if( file_exists("{$projectDir}/lespages/page_".$page.".php") ){ 
 							include("{$projectDir}/lespages/page_".$page.".php");
-							include("{$projectDir}/lespages/page_".$page.".css");
+							//include("{$projectDir}/lespages/page_".$page.".css");
 						}
 					?>
 				</div>
