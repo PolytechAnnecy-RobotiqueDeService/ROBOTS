@@ -7,7 +7,6 @@ h2 {
 	background-color: #0081AF;
 	padding: 5px;
 	border-radius: 10px;
-	display: inline-block;
 
 	display: flex;
 	flex-direction: row;
@@ -17,6 +16,8 @@ h2 {
 .membre {
 	position: relative;
 	width: 50%;
+	margin: 2px;
+	text-align: center;
 }
 
 
