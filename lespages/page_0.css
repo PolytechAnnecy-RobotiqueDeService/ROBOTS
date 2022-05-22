@@ -1,13 +1,3 @@
-body {
-  /*background-image: url('https://i.pinimg.com/originals/da/42/64/da4264a33bbcfcd56d3cb80e26430518.png');*/
-  margin: 0;
-}
-
-.header {
-  background-color: #f1f1f1;
-  padding: 5px;
-  text-align: center;
-}
 
 /* Style the topnav links */
 /*.topnav a {
@@ -24,25 +14,13 @@ body {
   color: black;
 }*/
 
-#fond {
+
+.container{
   text-align: center;
-}
 
-#inner {
-  background-color: lightgrey;
-  color: blue;
 }
-
- {
-  text-indent: 50px;
-  text-align: center;
-  letter-spacing: 3px;
-}
-
-#image1 {
-  border-radius: 2%;
-  height: 400px;
-  width: 800px;
+.image1 {
+  width: 70%; 
 }
 
 #naopepp {
@@ -52,24 +30,25 @@ body {
 }
 
 #pepper {
+  
+  text-align: center;
+
   border-radius: 5%;
-  height: 400px;
-  width: 800px;
+  width: 90%;
 }
 
 #nao {
+  
+  text-align: center;
   border-radius: 5%;
-  height: 400px;
-  width: 750px;
+  width: 90%;
 }
 
-#h2nao {
+.video{
+  display: center;
   text-align: center;
-  color: red;
-}
-#h2pep{
-  text-align: center;
-  color: red;
+  border-radius: 5%;
+  width: 90%;
 }
 
 .parent {
@@ -79,11 +58,10 @@ body {
 }
 
 .son {
-  width: 40%;
-  border: blue 2 solid;
-  margin-left: 5%
+  width: 50%;
+  text-align: center; 
 }
-#fott{
-  text-align: center;
-  color: red;
+
+.espace{
+  width: 5%;
 }
