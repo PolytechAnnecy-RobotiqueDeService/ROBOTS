@@ -34,13 +34,11 @@
 		$projectDir = dirname ( __FILE__ , 2 );	
 	}
 
-	include("{$projectDir}/lespages/bd_app.php"); 
+	include("bd_app.php"); 
 
-	/*Connexion à la base de données sur le serveur tp-epua*/
-	$conn = @mysqli_connect("tp-epua:3308", $mysqlUsername, $mysqlPassword);    
-		
-	/*connexion à la base de donnée depuis la machine virtuelle INFO642*/
-	/*$conn = @mysqli_connect("localhost", "etu", "bdtw2021");*/  
+	/*Connexion à la base de données*/
+	$conn = @mysqli_connect($mysqlHost, $mysqlUsername, $mysqlPassword);    
+	 
 
 	if (mysqli_connect_errno()) {
         $msg = "erreur ". mysqli_connect_error();
