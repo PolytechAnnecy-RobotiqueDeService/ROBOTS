@@ -9,47 +9,47 @@
 		<p>Nous avons avons 2 robot a notre disposition :</p>
 		<div class="robot">
 			<div class = "divPepper">
-				<img class="imgPepper" src="documents/images/pepper.jpg" alt="Pepper" /><br/> 
+				<img class="imgPepper" src="documents/images/Pepper_transparent_background.png" alt="Pepper" /><br/> 
 				<span>Pepper</span>
+				<div class="spoilerPepper">
+					<!--bouton plus d'info -->
+					<input type="button" class="boutonSpoiler" value="Plus d'info" onclick="ouvrirFermerSpoiler(this);" />
+					<div class="contenuSpoiler"><!--texte cacher -->
+					  <p>Pepper est dit être un robot émotionnel, car l'objectif est qu'il puisse avoir la réaction la plus appropriée pour une situation non définie.</p>
+
+					  <p>Le robot possède ainsi une variété de tons et de registres de langue qu'il va sélectionner en fonction de l'analyse du contexte et de son interlocuteur. La reconnaissance des émotions de l'interlocuteur est basée sur la détection des expressions faciales, du ton et du champ lexical employé.</p>
+
+					  <p>Outre l'interaction verbale, le robot va adapter sa position et respecter une certaine distance avec la personne, afin qu'elle ne soit pas mal à l'aise, mais que la relation puisse tout de même se construire. De la même façon, Pepper va adopter un langage corporel particulier. Tout cela dans le but que sa réaction soit la plus pertinente et la plus appréciée par l'interlocuteur.</p>
+
+					</div><br/> 
+				   
+				   
+				</div>
 			</div>
 			
 			<div class = "divNao">
-				<img class="imgNao" src="documents/images/Nao.jpg" alt="Nao"  /><br/> 
+				<img class="imgNao" src="documents/images/Nao_transparent_background.png" alt="Nao"  /><br/> 
 				<span>Nao</span>
+				<div class="spoilerNao">
+					<!--bouton plus d'info -->
+					<input type="button" class="boutonSpoiler" value="Plus d'info" onclick="ouvrirFermerSpoiler(this);" />
+					<div class="contenuSpoiler"><!--texte cacher -->
+						<p>NAO est un robot humanoïde français, autonome et programmable, initialement développé par la société Aldebaran Robotics, une start-up française située à Paris, rachetée par le groupe japonais SoftBank Groupe en 2015 qui la renomme en SoftBank Robotics.</p>
+
+					  <p>Le 15 août 2007, Nao remplace le chien robot Aibo de Sony en tant que robot utilisé dans la RoboCup Standard Platform League (SPL), une compétition internationale de robots joueurs de football. Nao a été utilisé dans la RoboCup 2008 et 2009, et le NaoV3R a été choisi comme plate-forme pour le SPL à la RoboCup 2010.</p>
+
+					  <p>Plusieurs versions du robot ont été déployées depuis 2008. Le Nao Academics Edition a été développé pour les universités et les laboratoires à des fins de recherche et d'éducation. Il a été mis à la disposition des institutions en 2008 et du grand public en 2011. Diverses mises à jour de la plate-forme Nao ont été publiées depuis, notamment la Nao Next Gen 2011 et la Nao Evolution 2014.</p>
+
+					  <p>Les robots Nao ont été utilisés à des fins de recherche et d'éducation dans de nombreuses institutions académiques du monde entier. En 2015, plus de 5 000 unités Nao sont utilisées dans plus de 50 pays.</p>
+					</div><br/> 
+				   
+
+				</div>
 			</div>
 
 		</div>
 
-		<div class="spoilerPepper">
-			<!--bouton plus d'info -->
-			<input type="button" class="boutonSpoiler" value="Plus d'info" onclick="ouvrirFermerSpoiler(this);" />
-			<div class="contenuSpoiler"><!--texte cacher -->
-			  <p>Pepper est dit être un robot émotionnel, car l'objectif est qu'il puisse avoir la réaction la plus appropriée pour une situation non définie.</p>
-
-			  <p>Le robot possède ainsi une variété de tons et de registres de langue qu'il va sélectionner en fonction de l'analyse du contexte et de son interlocuteur. La reconnaissance des émotions de l'interlocuteur est basée sur la détection des expressions faciales, du ton et du champ lexical employé.</p>
-
-			  <p>Outre l'interaction verbale, le robot va adapter sa position et respecter une certaine distance avec la personne, afin qu'elle ne soit pas mal à l'aise, mais que la relation puisse tout de même se construire. De la même façon, Pepper va adopter un langage corporel particulier. Tout cela dans le but que sa réaction soit la plus pertinente et la plus appréciée par l'interlocuteur.</p>
-
-			</div><br/> 
-		   
-		   
-		</div>
-
-		<div class="spoilerNao">
-			<!--bouton plus d'info -->
-			<input type="button" class="boutonSpoiler" value="Plus d'info" onclick="ouvrirFermerSpoiler(this);" />
-			<div class="contenuSpoiler"><!--texte cacher -->
-				<p>NAO est un robot humanoïde français, autonome et programmable, initialement développé par la société Aldebaran Robotics, une start-up française située à Paris, rachetée par le groupe japonais SoftBank Groupe en 2015 qui la renomme en SoftBank Robotics.</p>
-
-			  <p>Le 15 août 2007, Nao remplace le chien robot Aibo de Sony en tant que robot utilisé dans la RoboCup Standard Platform League (SPL), une compétition internationale de robots joueurs de football. Nao a été utilisé dans la RoboCup 2008 et 2009, et le NaoV3R a été choisi comme plate-forme pour le SPL à la RoboCup 2010.</p>
-
-			  <p>Plusieurs versions du robot ont été déployées depuis 2008. Le Nao Academics Edition a été développé pour les universités et les laboratoires à des fins de recherche et d'éducation. Il a été mis à la disposition des institutions en 2008 et du grand public en 2011. Diverses mises à jour de la plate-forme Nao ont été publiées depuis, notamment la Nao Next Gen 2011 et la Nao Evolution 2014.</p>
-
-			  <p>Les robots Nao ont été utilisés à des fins de recherche et d'éducation dans de nombreuses institutions académiques du monde entier. En 2015, plus de 5 000 unités Nao sont utilisées dans plus de 50 pays.</p>
-			</div><br/> 
-		   
-
-		</div></br>
+		</br>
 		
 		<h3 class="t">Liste modulable des different capteur des robots</h3>
 
