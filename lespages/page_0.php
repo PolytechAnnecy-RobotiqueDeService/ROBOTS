@@ -8,13 +8,6 @@
 	
 <body>
 
-
-	<form action="/action_page_0.php">
-	  <label for="gsearch">Recherche:</label>
-	  <input type="search" id="gsearch" name="gsearch">
-	  <a><input type="button" value="Find">
-	</form><!--pour creér un forum de recherche qui permet aux visiteure de faire la recherche sur la page, label pour le text et un botton d'entrer lier à l'action à faire-->
-	
 	<div class="container">
 		<div class="fond">
 
@@ -22,7 +15,9 @@
 
 			<div class="inner">
 				<h2>Nous sommes des étudiants de Polytech Annecy on s'occupent du projet "ROBOTIC".</h2>
-				<p>Lors de notre formation d’ingénieur SNI, nous avons réalisé un projet selon une thématique que l’on peut nuancer à notre guise. <br>Notre projet porte sur la Robotique de Service (APP RS) et se déroule sur l’ensemble de nos 3 années de formation<br></p>
+				<p>Lors de notre formation d’ingénieur SNI, nous avons réalisé un projet selon une thématique que 
+				l’on peut nuancer à notre guise. <br>Notre projet porte sur la Robotique de Service (APP RS) et se 
+				déroule sur l’ensemble de nos 3 années de formation<br></p>
 				<p>Ce projet permettra de vous faire visiter <br>
 					les locaux de notre école à l'aide des deux robot NAO et PEPPER.<br></p>
 			</div>
@@ -82,7 +77,8 @@
 		<h3 align="center">Merci pour votre visite </h3>
 	</div>
 	<footer align="center">
- 	<p id="foot" text-align="center"> Adresse : 5 chemin Bellevue / Annecy-le-Vieux / 74940 ANNECY / FRANCE - Tél : +33(0)450 096 600  <a href="https://www.polytech.univ-smb.fr/">Site Web</a></p>
+ 	<p id="foot" text-align="center"> Adresse : 5 chemin Bellevue / Annecy-le-Vieux / 74940 ANNECY / FRANCE - 
+		Tél : +33(0)450 096 600  <a href="https://www.polytech.univ-smb.fr/">Site Web</a></p>
  
 	</footer><!-- on utilise footer comme pied de la page;
 	chaque site web a une forme générale  -->
