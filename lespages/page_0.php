@@ -41,7 +41,7 @@
 
 			<div class="inner">
 				<h2>Nous sommes des étudiants de Polytech Annecy<br>
-					on s'occupent du projet "RBOTIC".</h2>
+					nous nous occupons du projet "RBOTIC".</h2>
 				<p>Lors de notre formation d’ingénieur SNI, nous avons réalisé un projet selon une thématique que l’on peut nuancer à notre guise. <br>Notre projet porte sur la Robotique de Service (APP RS) et se déroule sur l’ensemble de nos 3 années de formation<br></p>
 				<p>Ce projet permettra de vous faire visiter <br>
 					les locaux de notre école à l'aide des deux robot NAO et PEPPER.<br></p>
@@ -62,12 +62,12 @@
 					l'accueil,
 					l'information et l'orientation de leurs visiteurs.</h2>
 					 <video width="700" height="400" controls>
-   								 <source src="pepperv.mp4" type=video/mp4>
+   								 <source src="documents/videos/pepperv.mp4" type=video/mp4>
    					</video>
 			</div>
 			<div class="son">
 				<h2 id="h2nao">Robot NAO </h2>
-				<img id="nao" src="Rnao.jpg" /><br>
+				<img id="nao" src="documents/images/Rnao.jpg" /><br>
 				<h2>NAO est le premier robot humanoïde créé par SoftBank Robotics. Aujourd'hui à sa 6ème version, NAO
 					est
 					célèbre dans le monde entier. Formidable outil de programmation, il est devenu une référence dans
@@ -77,7 +77,7 @@
 					<p></p>
 					</h2>
 					<video width="700" height="400" controls>
-   								 <source src="naov.mp4" type=video/mp4>
+   								 <source src="documents/videos/naov.mp4" type=video/mp4>
    					</video>
 			</div>
 		</div>
