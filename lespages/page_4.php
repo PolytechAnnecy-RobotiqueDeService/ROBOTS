@@ -9,7 +9,6 @@
 </head>
 
 <body>
-<div id='fond'>
     <h1>Archives</h1>
     <p>Bienvenue sur la page des archives ! Vous trouverez ici un résumé de chaque semestre et de chaque séance, ainsi que les liens vers les PDF des archives à proprement parler, c’est-à-dire les différents comptes-rendus et rapports. Cette page sera mise à jour au fur et à mesure de l’avancement du projet. </p> 
 
@@ -126,12 +125,6 @@
         echo"</ul>"; // fin de la liste des semestres
 
     ?>
-
-
-
-
-</div>
-
 
 </body>
 </html>
