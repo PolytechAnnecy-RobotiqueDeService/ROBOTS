@@ -64,25 +64,25 @@ INSERT INTO `ROBOTS_membre` (`nom`, `prenom`, `mail`)
 VALUES ("SANGOUARD", "Marine", "marine.sangouard@gmail.com");
 
 INSERT INTO `ROBOTS_membre` (`nom`, `prenom`, `mail`)
-VALUES ("JENNY", "Camille", "");
+VALUES ("JENNY", "Camille", "Camille.jenny@etu.univ-smb.fr");
 
 INSERT INTO `ROBOTS_membre` (`nom`, `prenom`, `mail`)
-VALUES ("LEGLISE", "Cloé", "");
+VALUES ("LEGLISE", "Cloé", "cloe.leglise@free.fr");
 
 INSERT INTO `ROBOTS_membre` (`nom`, `prenom`, `mail`)
 VALUES ("ROY", "Nicolas", "nicolas.roy.8@ens.etsmtl.ca");
 
 INSERT INTO `ROBOTS_membre` (`nom`, `prenom`, `mail`)
-VALUES ("RUIZ", "Florian", "");
+VALUES ("RUIZ", "Florian", "Florian.ruiz@etu.univ-smb.fr");
 
 INSERT INTO `ROBOTS_membre` (`nom`, `prenom`, `mail`)
-VALUES ("MISON", "Jules", "");
+VALUES ("MISON", "Jules", "Jules.mison@etu.univ-smb.fr");
 
 INSERT INTO `ROBOTS_membre` (`nom`, `prenom`, `mail`)
-VALUES ("Benhima", "Mehdi", "");
+VALUES ("BENHIMA", "Mehdi", "Mehdi.benhima@etu.univ-smb.fr");
 
 INSERT INTO `ROBOTS_membre` (`nom`, `prenom`, `mail`)
-VALUES ("SAHL", "Hamza", "");
+VALUES ("SAHL", "Hamza", "Hamza.sahl@etu.univ-smb.fr");
 
 /* donnees capteurs*/
 INSERT INTO ROBOTS_capteur (`titre`,`categorie`, `type`,`robot`, `lieux`, `reference`)
