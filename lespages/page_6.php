@@ -26,7 +26,7 @@
   	?>
 
   	<h1> Commentaires </h1>
-  	<p>Pour toutes remarques, vous pouvez aussi nous laissez un commentaire ci-dessous</p>
+  	<p>Pour toute remarque, vous pouvez aussi nous laisser un commentaire ci-dessous</p>
 
     <form action="ROBOTS.php" method="get">
 		<textarea id="boiteCommentaires" name="commentaire" rows="10" cols="30" required></textarea><br>

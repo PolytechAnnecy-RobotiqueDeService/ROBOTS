@@ -17,9 +17,9 @@
             <p id=video1><video controls width="500" height="320"><source src="./documents/videos/capsule_demo_deplacement.mp4"></video></p>
             </li>
 			</br>
-            <li>Alternance entre le suivis de mur gauche ou droit</li>
+            <li>Alternance entre le suivi de mur gauche ou droit</li>
 			</br>
-            <li>Développement d'une méthode de synthèse vocale pour NAO ou Pepper dans le but de faciliter les interactions orales</li>
+            <li>Développement d'une méthode de synthèse vocale pour Nao ou Pepper dans le but de faciliter les interactions orales</li>
 			</br>
             <li>Développement du réseau pour la communication entre les robots et un serveur</li>
 			</br>
@@ -30,7 +30,7 @@
     <div id="update1">
         <p><strong>Développement terminé :</strong></p>
         <ul>
-            <li>Entraînement de Nao à reconnaître un texte dicté mot à mot grâce à une banque de mots reconnus contenus dans un fichier texte</li>
+            <li>Entraînement de Nao à reconnaître un texte dicté mot à mot grâce à une banque de mots reconnus contenue dans un fichier texte</li>
 			</br>
             <li>Suivi d'un mur par Pepper et correction de sa trajectoire en ligne droite</li>
     </div>
