@@ -4,8 +4,22 @@
 <link rel="icon" type="image/png" sizes="16x16" href="pepper.png">
 
 <body>
-    <h1>Suivi du Projet :</h1>
-    
+<h1>Suivi du Projet :</h1>
+    <!--carroussel d'images du projet-->
+    <div class="carroussel">
+      <div class="points">
+        <label for="slide-dot-1"></label>
+        <label for="slide-dot-2"></label>
+      </div>
+      
+      <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+      <img class="slide-img" src="./documents/images/welcome.jpg">
+
+      <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+      <img class="slide-img" src="./documents/images/Rpepper.jpg">
+    </div>
+
+
     <div id = "en_cours">
         <p>Bienvenue sur la page de suivi de notre projet. Ici, vous retrouverez un résumé de toutes nos avancées techniques, ainsi que des informations sur les aspects en cours de développement !</p>
         <!--<p id=video1><video controls width="500" height="320"><source src="./documents/videos/video1.mp4"></video></p></br>
@@ -34,6 +48,10 @@
 			</br>
             <li>Suivi d'un mur par Pepper et correction de sa trajectoire en ligne droite</li>
     </div>
+
+
+
+
 
     <!--<div id="galerie_photo">    il faudrait rajouter des photos dans la galerie
         </br>
