@@ -12,19 +12,28 @@
   <body>
   	<h1> Nos Contacts </h1>
   	<p>Pour tout renseignement, vous pouvez contacter notre équipe à l'aide des informations suivantes : </p>
-  	
-  	<?php
-		  /*requete pour afficher tous les membres*/
+  	<table>
+		<thead>
+			<tr>
+				<th colspan='2'>Membres du projet</th>
+			</tr>
+		</thead>
+	<?php
+	/*requete pour afficher tous les membres*/
   		$sql = "SELECT id_membre, nom, prenom, mail FROM ROBOTS_membre";
 		$result = mysqli_query($conn, $sql) or die("Requête invalide: ". mysqli_error()."\n".$sql);
-
-		echo ("<ul>");
 		while ($row = mysqli_fetch_assoc($result)) {
-			echo ("<li>".$row["nom"]." ".$row["prenom"]." : ".$row["mail"]."</li>");
+			echo("<tbody>
+					<tr>
+						<td>".$row["nom"]." ".$row["prenom"]."</td><td class='right'>".$row["mail"]."</td>
+					</tr>
+				</tbody>
+				");
 		}
-		echo "</ul>";
   	?>
+	</table>
 
+	  
   	<h1> Commentaires </h1>
   	<p>Pour toute remarque, vous pouvez aussi nous laisser un commentaire ci-dessous</p>
 
