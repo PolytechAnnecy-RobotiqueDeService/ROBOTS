@@ -10,7 +10,7 @@
   </head>
 	
   <body>
-  	<h1> Nos contacts </h1>
+  	<h1> Nos Contacts </h1>
   	<p>Pour tout renseignement, vous pouvez contacter notre équipe à l'aide des informations suivantes : </p>
   	
   	<?php
