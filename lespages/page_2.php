@@ -14,7 +14,7 @@
         <p><strong>Développement en cours :</strong></p>
         <ul>
             <li>Essayer de faire se déplacer Pepper par suivi de mur à l'aide de ses capteurs de distance. Voici une vidéo de démonstration où Pepper négocie un virage :</br>
-            <p id=video1><video controls width="500" height="320"><source src="./documents/videos/capsule_demo_deplacement.mp4"></video></p>
+            <p id=video1><video class="video" controls><source src="./documents/videos/capsule_demo_deplacement.mp4"></video></p>
             </li>
 			</br>
             <li>Alternance entre le suivi de mur gauche ou droit</li>
