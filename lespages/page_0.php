@@ -19,7 +19,7 @@
 				l’on peut nuancer à notre guise. <br>Notre projet porte sur la Robotique de Service (APP RS) et se 
 				déroule sur l’ensemble de nos 3 années de formation<br></p>
 				<p>Ce projet permettra de vous faire visiter <br>
-					les locaux de notre école à l'aide des deux robot Nao et Pepper.<br></p>
+					les locaux de notre école à l'aide des deux robots Nao et Pepper.<br></p>
 				<p>Vous trouverez sur notre site toutes les informations relatives à ce projet.</p>
 			</div>
 		</div>
