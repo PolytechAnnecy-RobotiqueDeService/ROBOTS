@@ -4,7 +4,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="pepper.png">
 
 <body>
-    <h1>Suivi du projet :</h1>
+    <h1>Suivi du Projet :</h1>
     
     <div id = "en_cours">
         <p>Bienvenue sur la page de suivi de notre projet. Ici, vous retrouverez un résumé de toutes nos avancées techniques, ainsi que des informations sur les aspects en cours de développement !</p>
