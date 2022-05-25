@@ -38,3 +38,8 @@ div#titre{
 p#video1{
     text-align: center;
 }
+
+.video{  
+	width: 70%;
+	border-radius: 5%;
+}
