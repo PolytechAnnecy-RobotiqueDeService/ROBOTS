@@ -1,0 +1,68 @@
+
+/* Style the topnav links */
+/*.topnav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+/*.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}*/
+
+
+.container{
+  text-align: center;
+
+}
+.image1 {
+  border-radius: 20%;
+  width: 70%; 
+}
+
+#naopepp {
+  display: flex;
+  background-color: black;
+  color: white;
+}
+
+#pepper {
+  
+  text-align: center;
+
+  border-radius: 5%;
+  width: 90%;
+}
+
+#nao {
+  
+  text-align: center;
+  border-radius: 5%;
+  width: 90%;
+}
+
+.video{
+  display: center;
+  text-align: center;
+  border-radius: 5%;
+  width: 90%;
+}
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.son {
+  width: 50%;
+  text-align: center; 
+}
+
+.espace{
+  width: 5%;
+}

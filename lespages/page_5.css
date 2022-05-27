@@ -1,0 +1,86 @@
+.robot{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.t{
+  clear: both;
+}
+.divNao {
+  float:right;
+  text-align: center;
+  width: 50%;
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.imgNao {
+  height: 300px;	
+}
+
+.divPepper {
+  float:left;
+  text-align: center;
+  width: 50%;
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.imgPepper {
+  height: 300px;	
+}
+
+
+.form1{
+	display: inline-block ;
+
+}
+
+
+/*pour le tableau*/
+table,
+td {
+    border: 1px solid #004643;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+.espace{
+  height: 20px;
+}
+
+
+/*pour le bouton plus d'info******************************************/
+div.spoilerPepper {
+  
+}
+
+div.spoilerNao {
+  
+}
+ 
+input.boutonSpoiler {
+    position: center;
+    
+  font-size: x-small;
+}
+ 
+ div.contenuSpoiler {
+    display: none;
+	padding: 7px;
+	text-align: justify;
+}
+/***************************************************************/
