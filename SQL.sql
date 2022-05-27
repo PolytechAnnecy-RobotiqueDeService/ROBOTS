@@ -1,25 +1,5 @@
 /*CODE sql*/
 
-DROP TABLE IF EXISTS `ROBOTS_media`;
-
-CREATE TABLE `ROBOTS_media` (
-	`id_media` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	`titre` VARCHAR(255) NOT NULL,
-	`type` VARCHAR(255),
-	`date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-	`lien` VARCHAR(255));      
-	
-DROP TABLE IF EXISTS `ROBOTS_document`;
-
-
-CREATE TABLE `ROBOTS_document` (
-	`id_document` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	`titre` VARCHAR(255) NOT NULL,
-	`type` VARCHAR(255),
-	`date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-	`lien` VARCHAR(255));
-
-
 DROP TABLE IF EXISTS `ROBOTS_membre`;
 
 CREATE TABLE `ROBOTS_membre` (
@@ -44,19 +24,7 @@ CREATE TABLE ROBOTS_capteur (
     robot varchar(255),
     lieux VARCHAR(255),
 	reference VARCHAR(255));
-	
-	
-/* données medias*/
-INSERT INTO `ROBOTS_media` (`titre`, `type`, `date`, `lien`)
-VALUES ("test1_img", "image", '2022-05-09 14:00:00', "https://tp-epua.univ-smb.fr/~sangouam/ROBOTS/documents/images/IMG_20220504_102031.jpg");
 
-INSERT INTO `ROBOTS_media` (`titre`, `type`, `date`, `lien`)
-VALUES ("test2_vidéo", "video", '2022-05-09 14:00:00', "https://tp-epua.univ-smb.fr/~sangouam/ROBOTS/documents/videos/20220504_103746.mp4");
-
-
-/* données documents*/
-INSERT INTO `ROBOTS_document` (`titre`, `type`, `date`, `lien`)
-VALUES ("test1_doc", "cr", '2022-05-09 14:00:00', "https://docs.google.com/document/d/1pa7nZDWT_BkugpsqJcrKRhalMSvmP7PIaBzFGjDPNWw/edit?usp=sharing");
 
 
 /* données membres*/
