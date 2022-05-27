@@ -18,13 +18,13 @@
         /* DÉCLARATION DES DIFFÉRENTES VARIABLES UTILISÉES PAR LA SUITE DANS LE CODE */
 
         // titres des semestres
-        $semestre[1]="Premier semestre";
+        $semestre[6]="Premier semestre";
 
         // présentations des semestres
-        $presentation_semestre[1]="<p>Le semestre 6 de notre cycle ingénieur marque le premier semestre de travail sur notre APP. C’est donc un semestre essentiellement lié à la découverte des différents outils à notre disposition afin de pouvoir apprendre à les maîtriser. Si ce travail de découverte est essentiel pour avancer dans notre travail, le gros de notre projet, c’est-à-dire l’établissement d’un cahier des charges et une progression plus réfléchie du travail, n’interviendra qu’aux semestres suivants, quand nous saurons déjà nous servir correctement de notre environnement de travail. Notre apprentissage sur ce semestre se concentrera essentiellement sur la maîtrise et la compréhension du fonctionnement de Choregraphe, le logiciel codé en python pour utiliser les robots Pepper et Nao ; l’apprentissage et la maîtrise du langage JavaScript pour créer une application web ; et enfin la compréhension et la maîtrise du principe de serveur web dans le but d’en créer un lors des semestres suivant (son but étant de lier entre eux tous les différents éléments de notre projet). </p>";
+        $presentation_semestre[6]="<p>Le semestre 6 de notre cycle ingénieur marque le premier semestre de travail sur notre APP. C’est donc un semestre essentiellement lié à la découverte des différents outils à notre disposition afin de pouvoir apprendre à les maîtriser. Si ce travail de découverte est essentiel pour avancer dans notre travail, le gros de notre projet, c’est-à-dire l’établissement d’un cahier des charges et une progression plus réfléchie du travail, n’interviendra qu’aux semestres suivants, quand nous saurons déjà nous servir correctement de notre environnement de travail. Notre apprentissage sur ce semestre se concentrera essentiellement sur la maîtrise et la compréhension du fonctionnement de Choregraphe, le logiciel codé en python pour utiliser les robots Pepper et Nao ; l’apprentissage et la maîtrise du langage JavaScript pour créer une application web ; et enfin la compréhension et la maîtrise du principe de serveur web dans le but d’en créer un lors des semestres suivant (son but étant de lier entre eux tous les différents éléments de notre projet). </p>";
         
         // bilan des semestres
-        $bilan_semestre[1]="bilan du semestre + lien du rapport";
+        $bilan_semestre[6]="<p>Ce semestre, placé sous le signe de la découverte, nous a permis non seulement de nous familiariser avec notre environnement de travail et notre équipe, mais aussi d’avancer significativement sur notre projet. Chacun a pu développer ses compétences et mieux comprendre le champ des possibles qui s’ouvrait à nous. Nous avons ainsi pu nous organiser selon les différents centres d’intérêt de chacun, en gardant toujours en tête un certain esprit d’équipe. La communication a été cruciale pour partager nos découvertes, obstacles et avancées et ainsi recadrer éventuellement une partie non compatible avec les autres. Nous avons ainsi pu développer de manière satisfaisante le développement de suivi de mur, le système de synthèse vocale et de communication des robots, et une application web, ainsi qu’une meilleure compréhension des serveurs. Nous avons à présent une base solide sur laquelle nous appuyer sur le gros de notre projet qui surviendra durant les prochains semestres, et durant la difficulté principale sera de lier entre eux les différents éléments de notre projet.</p><p>Le compte-rendu du semestre (rédigé par l’ensemble des membres de l’équipe) est disponible ci-dessous.</p>";
 
         // titres des séances
         $seance[1]="Première séance";
@@ -66,7 +66,7 @@
         echo "<ul>"; 
 
         // compteur du numéro du semestre
-        $a=1; 
+        $a=6; 
 
         // parcours des semestres via le compteur $a
         while (isset($semestre[$a])){ // début du semestre
@@ -112,11 +112,11 @@
                     <summary>
                         <b>Bilan du semestre</b>
                     </summary>
-                    <div class='text'>".$bilan_semestre[$a]."</div>
+                    <div class='text'>".$bilan_semestre[$a]."<button class = 'bouton'><a href=\"./documents/compterendus/compte_rendu_semestre_".$a.".pdf\" target=’_blank’>Rapport du semestre ".$b."</a></button></div>
                 </details>";
             }
             
-            $a++; // incrémentation du comteur des semestres
+            $a++; // incrémentation du compteur des semestres
 
             echo"</li></ul></div>"; // fin du semestre, fin de la liste des séances 
 
