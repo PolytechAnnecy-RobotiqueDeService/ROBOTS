@@ -20,27 +20,26 @@
 
 /* Esthétique générale de la page */
 #fond{
-    width: 100%;
-    margin: 0px 0px 0px 0px;
-    background-color: #004643;
-	border: 8px;
-	border-color: #004643;
-	box-sizing: border-box;
-	
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  background-color: #004643;
+  border: 8px;
+  border-color: #004643;
+  box-sizing: border-box;
 	padding: 25px 25px 25px 25px;
   }
   
 #titre{
-    margin: 5px;
-    text-align: center;
-    flex-basis: 100%;
+  margin: 5px;
+  text-align: center;
+  flex-basis: 100%;
   }
 
 #titre span{
 	font-family: font_title;
-    font-weight:bold;
-    font-size: 40pt;
-    color :#ffffff;
+  font-weight:bold;
+  font-size: 40pt;
+  color :#ffffff;
 }
 
 h1 {
@@ -50,8 +49,6 @@ h1 {
   
   /* Gestion du menu */
 
-  #menu{
-  }
   
   #menu a{
     text-decoration:none;
