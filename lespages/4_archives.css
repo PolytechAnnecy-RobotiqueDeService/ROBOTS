@@ -20,9 +20,10 @@ div.seance{
 }
 
 .bouton{
-    background-color: #004643;
+    background-color: #cde4de;
     color: black;
     cursor: grabbing;
+    border: 1px;
 }
 
 summary:hover{
