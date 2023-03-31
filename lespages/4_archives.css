@@ -26,6 +26,14 @@ div.seance{
     border: 1px;
 }
 
+.titre_semestre{
+  font-weight: 1200;
+  font-size: large;
+}
+
+summary{
+  font-weight: 650;
+}
 summary:hover{
     cursor: grabbing;
 }
