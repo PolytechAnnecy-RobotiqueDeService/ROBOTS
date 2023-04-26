@@ -165,29 +165,25 @@
   
     @media only screen and (min-width: 731px){
       #fond{
-          display : flex;
-          flex-direction: column;
-      }
-  
-      #menu{
-          
-      }
-  
-      ul#lemenu{		
-          display: flex;
-          flex-direction: row;
-          flex-wrap: nowrap;
-          justify-content: flex-start;
-      }
-      
-      ul#lemenu li{
-          flex-basis: 100px;
-          flex-grow: 2;
-      }
-  
-      #contenu{
-  
-      }
+        display : flex;
+        flex-direction: column;
+    }
+
+    #menu{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       justify-content: flex-start;
+       align-items: stretch;
+       
+
+    }
+
+    .lemenu{
+      flex-basis : 20%;
+    }
+
+  }
     }
   
     

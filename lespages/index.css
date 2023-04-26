@@ -208,10 +208,10 @@ h1 {
 }
 
 .btn_menu:hover {
-    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff9d2d), color-stop(1, #ffb84e) );
-    background:-moz-linear-gradient( center top, #a6a39f 5%, #f0eee2 100% );
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64');
-    background-color:#e1a13b;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff9d2d), color-stop(1, #ffb84e) );
+  background:-moz-linear-gradient( center top, #a6a39f 5%, #f0eee2 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64');
+  background-color:#e1a13b;
 }
 
 #actif{
@@ -231,24 +231,19 @@ h1 {
     }
 
     #menu{
-        
-    }
-
-    ul#lemenu{		
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-    }
-    
-    ul#lemenu li{
-        flex-basis: 100px;
-        flex-grow: 2;
-    }
-
-    #contenu{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       justify-content: flex-start;
+       align-items: stretch;
+       
 
     }
+
+    .lemenu{
+      flex-basis : 20%;
+    }
+
   }
 
   
