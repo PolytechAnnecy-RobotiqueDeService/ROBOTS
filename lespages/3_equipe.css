@@ -1,10 +1,7 @@
 /*SPECIFIQUE A LA PAGE*/
-h2 {
-	text-align:center;
-}
 
-#teamPicture{
-	width:80%;
+.contenu{
+  justify-content: center;
 }
 
 .team {
@@ -15,38 +12,23 @@ h2 {
 
 	display: flex;
 	flex-direction: row;
+  flex-wrap : wrap;
 	justify-content: center;
 }
 
-.membre {
-	position: relative;
-	width: 50%;
-	margin: 2px;
-	text-align: center;
+#team_s6{
+  width : 60%;
+  border-radius : 5%; 
 }
 
-
-.membre img {
-	display: block;
-	width: 100%;
-	height: auto;
+#team_s7{
+  width : 60%;
+  border-radius : 5%; 
 }
 
-.overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: .5s ease;
-	background-color: #004643;
-}
-
-.membre:hover .overlay {
-  opacity: 1;
+#team_s9{
+  width : 60%;
+  border-radius : 5%; 
 }
 
 .text {

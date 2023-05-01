@@ -11,3 +11,8 @@ Instructions pour Github:
 
 Lire cet article pour l'authentification:
 	https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
+
+INFOS DE CLOE POUR LA FI5 :
+	Page EQUIPE : 
+		Tout est déjà pré-rempli. Compléter les noms de chef de projet et description de la photo, éventuellement ajouter des redoublants (?). Enregistrer la photo dans le dossier image "equipe_s9.jpg". Ne pas oublier de décommenter. 
