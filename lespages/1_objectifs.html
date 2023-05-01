@@ -23,68 +23,142 @@
 			</div>
 
 			<div id="contenu"> <!-- division réservé au contenu des pages -->
-                <h3>Objectif :</h3>
-		<p>Le thème de notre projet est la robotique de service. Notre but est donc d’utiliser des robots, tels que les robots Pepper ou Nao, pour subvenir à des besoins de services à l'être humain, par exemple dans un contexte de guidage. Ce qu’on appelle guidage est plus globalement la faculté du robot à guider des personnes dans un bâtiment quelconque, tout en interagissant avec elles, afin de leur indiquer leur chemin.
-		Pour commencer ce projet, nous avons choisi de nous baser sur le bâtiment de Polytech Annecy et plus précisément de programmer Pepper pour qu’il puisse déjà se repérer à l’étage 2, où notre salle d’APP se situe. Il aura la charge, lors d’une Journée Porte Ouverte (JPO), d’indiquer les salles intéressantes à visiter en fonction des préférences des visiteurs dans cet étage. </p>
+                <h1>Objectifs</h1>
+				<p>Comme indiqué en page d'accueil, notre thème est la robotique de service, et nous avons choisi d'utiliser les robots à notre disposition (Pepper et Nao, de Softbank Robotics) afin d'organiser une visite guidée de notre établissement faite par ces robots. Pour cela, nous avons établi un cahier des charges détaillé. L'objectif principal de notre second semestre de travail était la rédaction de ce cahier des charges. Nous avons décidé d'opter par un cahier des charges par niveau de difficulté, le premier nivau comprenant des fonctionnalités que nous avons jugées faciles à implémenter, et le dernier niveau (le niveau 4) comprenant un idéal à atteindre, dans le cas où nous aurions plus de temps. Les différents niveaux du cahier des charges sont détaillés ci-dessous, et vous trouverez la version rédigée de notre cahier des charges en annexe de notre rapport de fin de semestre 7 sur notre page Archives. La page Avancement décrit notre avancement sur ce projet et des explications un peu plus détaillées sur les différents concepts que vous croiserez dans le cahier des charges. </p>
 		
-		<h3>Liste des fonctionalités pour Pepper :</h3>
-			<ul>
+				<h2>Niveau 1 du cahier des charges (fonctionnalités essentielles, atteint en fin de deuxième semestre)</h2>
 
-				<details><summary><b>Se repérer dans son environnement</b></summary></br>
-				Le robot doit être capable de se repérer dans son environnement, plus précisément au sein d’un bâtiment, par exemple savoir reconnaître les salles qui l’entourent, afin de proposer des trajets préférentiels aux visiteurs.
-				</details></br>
+				<ul>
 
-				<details><summary><b>Interagir avec les humains</b></summary></br>
-				Comprendre les interlocuteurs, savoir interpréter des paroles et réagir en fonction de ce qui a été énoncé, notamment en utilisant la synthèse vocale ou encore grâce à sa tablette tactile.
-				</details></br>
+					<details>
+						<summary><b>Déplacement de Pepper</b></summary>
+						<p>Pas de déplacement prévu pour ce niveau, simple affichange du plan sur la tablette.</p>
+					</details>
 
-				<details><summary><b>Accompagner les visiteurs</b></summary></br>
-				Pouvoir sur demande emmener un groupe de visiteurs à un point demandé ou défini.
-				</details></br>
+					<details>
+						<summary><b>Interaction humains - robots</b></summary>
+						<p>Discours de bienvenue et réaction à des mots-clé et phrases pré-écrites (par exemple, présentation des différentes filières sur demande). </p>
+					</details>
 
-				<details><summary><b>Se déplacer sans se perdre</b></summary></br>
-				Pepper doit pouvoir se déplacer le plus fluidement possible, sans se perdre ou cogner les murs, en reconnaissant les portes (et donc les salles) et ne pas confondre l’ouverture d’une porte avec un virage dans un couloir.
-				</details></br>
-			
-			</ul>
+					<details>
+						<summary><b>Tablette tactile</b></summary>
+						<p>Implémentation du site de la tablette : affichage du plan selon l'étage et explication générale des salles. </p>
+					</details>
 
-		<h3>Liste des fonctionalités pour Nao :</h3>
-			
-			<ul>
+					<details>
+						<summary><b>Serveur</b></summary>
+						<p>Création du serveur : établissement d'une connexion entre les différents clients (Pepper, Nao, tablette), réception et traitement de requêtes simples (par chaîne de caractère uniquement). </p>
+					</details>
 
-				<details><summary><b>Accueillir les visiteurs dans le hall</b></summary></br>
-				Nao doit être en capacité d'accueillir les visiteurs et leur expliquer comment fonctionne la visite.
-				</details></br>
+					<details>
+						<summary><b>Sécurité</b></summary>
+						<p>Ajout d'un bouton d'arrêt d'urgence sur la tablette en cas de problème sur Pepper [abandonné]. </p>
+					</details>
 
-				<details><summary><b>Présentation générale</b></summary></br>
-				Il doit être en capacité de faire une présentation générale de Polytech, de ses spécialités, des matières ...
-				</details></br>
-
-				<details><summary><b>Repondre au question</b></summary></br>
-				Nao doit pouvoir comprendre et répondre à des questions posées par ses interlocuteurs. S'il ne le peut pas, il doit rediriger vers une autre personne.
-				</details></br>
-
-				<details><summary><b>Communiquer avec Pepper</b></summary></br>
-				Nao a aussi pour rôle de prévenir Pepper que des personnes veulent faire une visite.
-				</details></br>
-	 
-			</ul>
-		
-		<h3>Un bonus dans notre projet :</h3>
-		
-		<p>Un second Pepper devrait arriver d’ici la fin du projet. Nous avons imaginé le mettre au premier étage et qu’il puisse aussi communiquer
-		avec NAO et le Pepper que nous possédons déjà. Puisque la conception de programme embarqué dans les robots Pepper n’est pas spécifique à un seul 
-		robot et que l’information du bâtiment est conservée au niveau du serveur, il est facile d’ajouter un nombre arbitraire de robots-guides à notre projet. 
-		</p>
+				</ul>	
 
 
+				<h2>Niveau 2 du cahier des charges (fonctionnalités qu'on aimerait mettre en place avant la fin)</h2>
+
+				<ul>
+
+					<details>
+						<summary><b>Déplacement de Pepper</b></summary>
+						<p>Faire faire un chemin prédéfini en boucle à Pepper. </p>
+					</details>
+
+					<details>
+						<summary><b>Interaction humains - robots</b></summary>
+						<p>Rendre les robots plus "vivants" avec l'utilisation de LEDs et mouvements pour imiter des émotions, par exemple. </p>
+					</details>
+
+					<details>
+						<summary><b>Tablette tactile</b></summary>
+						<p>Affichage du chemin le plus court pour aller d'un point A à un point B, et affichage d'un QR code à scanner pour obtenir le plan contenant le chemin sur un téléphone portable. </p>
+					</details>
+
+					<details>
+						<summary><b>Serveur</b></summary>
+						<p>Répondre aux demandes des clients, renvoyer le plan demandé et implémenter l'algorithme de plus court chemin. </p>
+					</details>
+
+					<details>
+						<summary><b>Sécurité</b></summary>
+						<p>Alerte de niveau de batterie faible et alternance des deux Pepper pour assurer un service continu.</p>
+					</details>
+
+				</ul>	
+
+
+				<h2>Niveau 3 du cahier des charges (fonctionnalités qu'on espère mettre en place avant la fin)</h2>
+
+				<ul>
+
+					<details>
+						<summary><b>Déplacement de Pepper</b></summary>
+						<p>Affichage du plan et eventuellement indications à l'oral sur le chemin à suivre. Essai avorté d'un système où Pepper doit suivre un humain en le guidant comme un GPS. </p>
+					</details>
+
+					<details>
+						<summary><b>Interaction humains - robots</b></summary>
+						<p>Compréhension du sens d'une phrase afin d'obtenir une interaction fluide. </p>
+					</details>
+
+					<details>
+						<summary><b>Tablette tactile</b></summary>
+						<p>Actualisation du plan avec affichage de la position du robot en temps réel.</p>
+					</details>
+
+					<details>
+						<summary><b>Serveur</b></summary>
+						<p>Réception et traitement des informations sur Pepper. Traitement de l'algorithme de plus court chemin. </p>
+					</details>
+
+					<details>
+						<summary><b>Sécurité</b></summary>
+						<p>Implémentation d'un "mode opérateur" où Pepper est guidé par une télécommande virtuelle sur la tablette tactile. </p>
+					</details>
+
+					<details>
+						<summary><b>Accessibilité</b></summary>
+						<p>Option pour les malentendants [plus vraiment d'actualité étant donné que la plupart des interactions se font sur la tablette]. Option de changement de langue (anglais) ur le site de la tablette tactile. </p>
+					</details>
+
+				</ul>	
+
+
+				<h2>Niveau 4 du cahier des charges (réalisation idéale, si nous avions plus de temps pour l'implémenter)</h2>
+
+				<ul>
+
+					<details>
+						<summary><b>Déplacement de Pepper</b></summary>
+						<p>Déplacement en suivi de mur du robot qui peut suivre le chemin et guider les visiteurs à l'endroit souhaité. </p>
+					</details>
+
+					<details>
+						<summary><b>Interaction humains - robots</b></summary>
+						<p>Interaction fluide avec un interlocuteur. </p>
+					</details>
+
+					<details>
+						<summary><b>Tablette tactile</b></summary>
+						<p>Affichage du plan actualisé en temps réel avec la position des deux robots. Récupérer lé base de donnée des événements se déroulant dans les salles afin de les présenter aux visiteurs.</p>
+					</details>
+
+					<details>
+						<summary><b>Serveur</b></summary>
+						<p>Récupérer les plans du bâtiment dans lesquels les robots sont intallés (afin de pouvoir changer les robots de bâtiment pour d'autres visites, et sous réserves que ces informations soient rendues disponibles par le bâtiment). </p>
+					</details>
+
+					<details>
+						<summary><b>Accessibilité</b></summary>
+						<p>Option de changement de langues avec plusieurs choix. </p>
+					</details>
+
+				</ul>	
 
 			</div>
-				
-			</br></br>
-			 
-
-			
 		
 		</div>
 
