@@ -8,8 +8,14 @@ div.seance{
     background-color: lightblue;
 }
 
+p{
+  text-align : justify;
+  text-indent : 30px;
+}
+
 .text{
     text-align: justify;
+    text-indent : 30px;
     text-indent: 10%;
     margin-left: 15px;
     margin-right: 15px;

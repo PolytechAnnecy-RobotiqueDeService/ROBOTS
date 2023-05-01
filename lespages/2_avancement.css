@@ -5,6 +5,11 @@ img{
     margin : 20px;
 }
 
+.text{
+  text-align: justify;
+  text-indent: 30px;
+}
+
 div#galerie_photo{
     position:relative;
 }
