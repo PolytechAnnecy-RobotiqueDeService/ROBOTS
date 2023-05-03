@@ -28,6 +28,7 @@
                 <div>
                     <p class="text">Sur cette page seront expliqués les aspects techniques de l'avancement de notre projet. Dans la page des archives, vous trouverez tous nos compte-rendus de séances ainsi que nos rapports de fin de semestres. L'objectif de cette page est d'expliquer clairement ce que nous avons fait, sans noyer notre lecteur dans les détails ! Les concepts seront donc simplifiés pour la plupart, et vous pourrez trouver plus d'informations dans nos compte-rendus sur la page dédiée aux archives, et particulièrement dans les rapports de fin de semestres. </p>
                     <p class="text">Durant ce projet, nous avons utilisé les robots Pepper et Nao de Softbanks Robotics. Nous les avons programmés à l'aide du logiciel Choregraphe, qui permet de faire faire des actions simples aux robots par programmation graphique, mais également d'approfondir la programmation en utilisant le langage Python Aldébaran. Les boîtes d'action du logiciel sont programmées dans ce langage, et nous en avons modifié et écrit quelques-unes pour notre utilisation personnelle. </p>
+
                     <br>
                 </div>
 
@@ -45,6 +46,12 @@
                             <details>
                                 <summary><b>Algorithme de plus court chemin</b></summary>
                                 <p class="text">L'algorithme de suivi de mur permet uniquement à Pepper de se déplacer tout droit, en suivant un mur. Nous avons codé un algorithme de plus court chemin en Python afin de déterminer la trajectoire que devrait suivre le robot. Pour ce faire, nous avons découpé le plan de chaque étage en un quadrillage régulier afin de déterminer les coordonnées de chacun des points d'intérêt du bâtiment - en l'occurence, les salles à visiter. Cet algorithme, dont le protocole est à retrouver en annexe du rapport de fin de semestre huit sur la page des archives, génère le chemin le plus court à emprunter pour se déplacer d'un point à un autre. C'est cette trajectoire que nous envoyons à Pepper, sous la forme d'une suite d'instructions à la manière d'un GPS, afin que le robot se déplace suivant une trajectoire logique pour emmener les visiteurs là où ils le souhaitent. Une fois l'algorithme implémenté, il a fallu détecter tous les bugs (mauvais placement d'un point, cas particulier dû à la forme du bâtiment...) pour les régler au cas par cas, et mettre en place un système de communication clair entre cet algorithme et le logiciel Choregraphe qui doit savoir interpréter les instructions pour les mettre en place. </p>
+
+                                <p>Le plan à suivre est affiché sur la tablette de Pepper (cf partie suivante "Interaction homme-machine"), avec un QR code permettant à l'utilisateur de scanner ce plan sur son téléphone. Voici l'affichage sur tablette de cette page, pour une trajectoire allant de la salle C204 à la salle A214(passe la souris sur l'image pour l'agrandir) : </p>
+
+                                <div class = "img_container">
+                                    <img class = "img" src="../documents/images/tablette_plan_et_qrcode.PNG" width="30%">
+                                </div>
                             </details>
                             <br><br>
                         </li>
@@ -62,6 +69,14 @@
                             <details>
                                 <summary><b>La tablette tactile</b></summary>
                                 <p class="text">Les robots Pepper ont une tablette tactile intégrée et indépendante du robot. Nous avons codé une application web à afficher sur cette tablette, avec une page d'accueil permettant de naviguer sur les plans des différents étages. Pour chaque étage, un plan s'affiche avec une légende expliquant les différents types de salle. L'utilisateur peut ainsi sélectionner la salle qu'il souhaite visiter, et en lire une courte présentation. S'il le souhaite, il peut ainsi afficher le plan avec la trajectoire générés par l'algorithme de plus court chemin, et même scanner un QR code lui permettant d'obtenir ce plan sur son téléphone portable. C'est en utilisant la tablette tactile que l'utilisateur peut communiquer avec le robot et lui demander de le guider à un endroit en particulier. Cette application web a été codée uniquement en HTML/CSS et Javascript, et utilise également du PHP pour la partie serveur à retrouver plus bas. Des copies d'écran montrant cette application sont présentes en rapport de fin de semestre 7 à retrouver dans la page dédiée aux archives. </p>
+
+                                <p>Voici des images de la page d'accueil de l'application web, de la page du premlier étage, et enfin de la page du deuxième étage avec la présentation de notre salle de travail (passe la souris sur l'image pour l'agrandir) : </p>
+
+                                <div class = "img_container">
+                                    <img class = "img" src="../documents/images/tablette_accueil.PNG" width="20%">
+                                    <img class = "img" src="../documents/images/tablette_etage_1.PNG" width="20%">
+                                    <img class = "img" src="../documents/images/tablette_etage_2.PNG" width="20%">
+                                </div>
                             </details>
 
                             <br><br>
